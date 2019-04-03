@@ -5,6 +5,9 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 
 class App extends Component {
+  componentDidMount() {
+  }
+
   render() {
     return (
       <BrowserRouter>
