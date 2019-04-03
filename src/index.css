@@ -11,8 +11,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.app {
+#root {
   overflow: hidden;
+}
+
+.app {
 }
 
 
