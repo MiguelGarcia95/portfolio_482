@@ -60,14 +60,31 @@ const PageContainer = styled.div`
 `;
 
 const Page = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
+  color: white;
+
+  &.home {
+    background-color: mediumslateblue;
+  }
+
+  &.about {
+    background-color: burlywood;
+  }
+
+  h1 {
+    font-weight: 300;
+    color: white;
+  }
+
   h2 {
-    color: #0d47a1;
+    font-weight: 400;
   }
   p {
     font-size: 1rem;
@@ -76,21 +93,9 @@ const Page = styled.div`
     color: #37474f;
   }
   a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #4776e6;
-    border-radius: 5px;
-    background-image: linear-gradient(
-      to right,
-      #4776e6 0%,
-      #8e54e9 51%,
-      #4776e6 100%
-    );
-  }
-
-  img {
-    border-radius: 50%;
+    color: white;
+    text-decoration: none; 
+    margin-top: 50px;
   }
 `;
 
@@ -103,24 +108,14 @@ const HomePageElm = styled(Page)`
   }
 `;
 
-const DetailsPageElm = styled(Page)`
-  background-color: #90caf9;
-  &.page-enter {
-    animation: ${slideInRight} 0.2s forwards;
-  }
-  &.page-exit {
-    animation: ${slideOutRight} 0.2s forwards;
-  }
-`;
-
 const Home = () => {
   return (
-    <div className="App home">
+    <HomePageElm className='page home'>
       <h1>Home</h1>
       <Link to='/about'>
         <h2>Go To About</h2>
       </Link>
-    </div>
+    </HomePageElm>
   )
 }
 
