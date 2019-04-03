@@ -57,6 +57,5 @@ body {
   }
   to {
     transform: translateX(0%);
-    /* visibility: hidden; */
   }
 }
