@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
+import {Page} from '../../utils/styledClasses';
 
 const slideInLeft = keyframes`
   from {
@@ -59,52 +60,12 @@ const PageContainer = styled.div`
   font-family: "Open Sans", sans-serif;
 `;
 
-const Page = styled.div`
-  width: 100vw;
-  max-width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  color: white;
-  overflow: hidden;
-  &.home {
-    background-color: mediumslateblue;
-  }
-
-  &.about {
-    background-color: burlywood;
-  }
-
-  h1 {
-    font-weight: 300;
-    color: white;
-  }
-
-  h2 {
-    font-weight: 400;
-  }
-  p {
-    font-size: 1rem;
-    max-width: 400px;
-    margin: 20px auto;
-    color: #37474f;
-  }
-  a {
-    color: white;
-    text-decoration: none; 
-    margin-top: 50px;
-  }
-`;
-
 const HomePageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInLeft} 0.2s forwards;
+    animation: ${slideInLeft} 0.5s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutLeft} 0.2s forwards;
+    animation: ${slideOutLeft} 0.5s ease forwards;
   }
 `;
 
