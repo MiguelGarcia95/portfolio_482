@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const PageContainer = styled.div`
   position: relative;
@@ -13,7 +13,6 @@ const PageContainer = styled.div`
   background-color: #e3f2fd;
   font-family: "Open Sans", sans-serif;
 `;
-
 
 const App = () => {
   return (
