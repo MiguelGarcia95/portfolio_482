@@ -69,7 +69,7 @@ const Page = styled.div`
   flex-direction: column;
   position: absolute;
   color: white;
-
+  overflow: hidden;
   &.home {
     background-color: mediumslateblue;
   }
@@ -110,7 +110,7 @@ const HomePageElm = styled(Page)`
 
 const Home = () => {
   return (
-    <HomePageElm className='page home'>
+    <HomePageElm className='app home'>
       <h1>Home</h1>
       <Link to='/about'>
         <h2>Go To About</h2>

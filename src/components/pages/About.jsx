@@ -12,7 +12,8 @@ const Page = styled.div`
   flex-direction: column;
   position: absolute;
   color: white;
-
+  overflow: hidden;
+  
   &.home {
     background-color: mediumslateblue;
   }
@@ -39,15 +40,6 @@ const Page = styled.div`
     color: white;
     text-decoration: none; 
     margin-top: 50px;
-  }
-`;
-
-const AboutPageElm = styled(Page)`
-  &.page-enter {
-    animation: ${slideInRight} 0.2s forwards;
-  }
-  &.page-exit {
-    animation: ${slideOutRight} 0.2s forwards;
   }
 `;
 
@@ -100,10 +92,19 @@ const slideOutRight = keyframes`
   }
 `;
 
+const AboutPageElm = styled(Page)`
+  &.page-enter {
+    animation: ${slideInRight} 0.2s forwards;
+  }
+  &.page-exit {
+    animation: ${slideOutRight} 0.2s forwards;
+  }
+`;
+
 class About extends React.Component {
   render() {
     return (
-      <AboutPageElm className='page about'>
+      <AboutPageElm className='app about'>
         <h1>About</h1>
         <Link to='/'>
           <h2>Go To Home</h2>
