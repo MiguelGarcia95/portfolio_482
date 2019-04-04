@@ -18,6 +18,12 @@ const WorkPageElm = styled(OverflowPage)`
 class Work extends React.Component {
   componentDidMount() {
     document.getElementById('root').style.overflowY = 'auto';
+
+  }
+
+  loadContent = () => {
+    document.querySelector('.work_content').style.height = 'auto';
+    document.querySelector('.work_content').style.overflow = 'auto';
   }
 
   render() {
@@ -28,7 +34,7 @@ class Work extends React.Component {
         <Link to='/work/1'>
           <h2>Go To work 1</h2>
         </Link>
-        <section style={{height: '200px', backgroundColor: 'red', width: '100%'}}>
+        <section className='work_content' style={{height: '200px', backgroundColor: 'red', width: '100%'}}>
 
         </section>
       </WorkPageElm>
