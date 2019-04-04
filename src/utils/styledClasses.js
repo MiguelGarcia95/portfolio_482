@@ -20,6 +20,10 @@ export const Page = styled.div`
     background-color: burlywood;
   }
 
+  &.show_work {
+    background-color: olive;
+  }
+
   h1 {
     font-weight: 300;
     color: white;

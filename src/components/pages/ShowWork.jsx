@@ -5,7 +5,7 @@ import styled, { keyframes } from "styled-components";
 import {Page} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 
-const WorkPageElm = styled(Page)`
+const ShowWorkPageElm = styled(Page)`
   &.page-enter {
     animation: ${slideInRight} 0.5s ease forwards;
   }
@@ -14,17 +14,17 @@ const WorkPageElm = styled(Page)`
   }
 `;
 
-class Work extends React.Component {
+class ShowWork extends React.Component {
   render() {
     return (
-      <WorkPageElm className='app work'>
-        <h1>Work</h1>
-        <Link to='/work/1'>
-          <h2>Go To work 1</h2>
+      <ShowWorkPageElm className='app show_work'>
+        <h1>ShowWork</h1>
+        <Link to='/work'>
+          <h2>Go To work</h2>
         </Link>
-      </WorkPageElm>
+      </ShowWorkPageElm>
     )
   }
 }
 
-export default Work;
+export default ShowWork;

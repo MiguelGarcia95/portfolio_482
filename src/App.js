@@ -5,6 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import Work from './components/pages/Work';
+import ShowWork from './components/pages/ShowWork';
 import styled from "styled-components";
 
 const PageContainer = styled.div`
@@ -31,7 +32,8 @@ const App = () => {
                 <Switch location={location} >
                   <Route exact path='/' component={Home} />
                   <Route exact path='/contact' component={Contact} />
-                  <Route exact path='/work/:name' component={Work} />
+                  <Route exact path='/work' component={Work} />
+                  <Route path='/work/:name' component={ShowWork} />
                   {/* <Route render={() => <Redirect to="/contact"/>}/> */}
                 </Switch>
                 </CSSTransition>
