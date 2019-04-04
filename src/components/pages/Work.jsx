@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
+import {projects} from '../../utils/projectsData';
 
 import {Page} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
@@ -41,6 +42,7 @@ const WorkPageElm = styled(Page)`
 
 class Work extends React.Component {
   render() {
+    console.log(projects)
     return (
       <WorkPageElm className='app work'>
         <h1>Work</h1>
