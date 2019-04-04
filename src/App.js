@@ -33,7 +33,7 @@ const App = () => {
                   <Route exact path='/' component={Home} />
                   <Route exact path='/contact' component={Contact} />
                   <Route exact path='/work' component={Work} />
-                  <Route path='/work/:name' component={ShowWork} />
+                  <Route path='/work/:workName' component={ShowWork} />
                   {/* <Route render={() => <Redirect to="/contact"/>}/> */}
                 </Switch>
                 </CSSTransition>
