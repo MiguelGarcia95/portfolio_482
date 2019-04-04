@@ -18,12 +18,17 @@ const WorkPageElm = styled(OverflowPage)`
 class Work extends React.Component {
   componentDidMount() {
     document.getElementById('root').style.overflowY = 'auto';
-
+    setInterval(() => {
+      this.loadContent();
+    }, 1000)
   }
 
   loadContent = () => {
-    document.querySelector('.work_content').style.height = 'auto';
-    document.querySelector('.work_content').style.overflow = 'auto';
+    const workContent = document.querySelector('.work_content');
+    if (workContent) {
+      workContent.style.height = '200px';
+    }
+    // document.querySelector('.work_content').style.overflow = 'auto';
   }
 
   render() {
@@ -31,10 +36,10 @@ class Work extends React.Component {
     return (
       <WorkPageElm className='app work'>
         <h1>Work</h1>
-        <Link to='/work/1'>
+        <Link to='/work/1' style={{marginTop: '-500px'}}>
           <h2>Go To work 1</h2>
         </Link>
-        <section className='work_content' style={{height: '200px', backgroundColor: 'red', width: '100%'}}>
+        <section className='work_content' >
 
         </section>
       </WorkPageElm>
