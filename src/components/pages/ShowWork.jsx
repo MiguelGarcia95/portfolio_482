@@ -5,23 +5,36 @@ import styled, { keyframes } from "styled-components";
 import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
 
-export const slideInTop2 = keyframes`
+export const fadeIn = keyframes`
   from {
-    transform: translate3d(0, ${window.innerHeight}px, 0);
+    opacity: 0;
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    visibility: visible;
+  }
+`;
+
+export const fadeOut = keyframes`
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: visible;
   }
 `;
 
 const ShowWorkPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInTop} 0.5s linear forwards;
+    animation: ${slideInTop} 0.5s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.5s linear forwards;
+    animation: ${slideOutBottom} 0.5s ease forwards;
   }
 `;
 
