@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
+import {projects} from '../../utils/projectsData';
 
 import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
@@ -39,8 +40,18 @@ const ShowWorkPageElm = styled(Page)`
 `;
 
 class ShowWork extends React.Component {
+  state = {
+
+  }
+
   componentDidMount() {
     document.getElementById('root').style.overflowY = 'hidden';
+  }
+
+  fetchProject = name => {
+    return projects.reduce((fetchedProject, project) => {
+      
+    }, null)
   }
 
   render() {
