@@ -41,10 +41,11 @@ const ShowWorkPageElm = styled(Page)`
 
 class ShowWork extends React.Component {
   state = {
-
+    workObject: ''
   }
 
   componentDidMount() {
+    this.setState({workObject: this.fetchProject(this.props.match.params.workName)})
     document.getElementById('root').style.overflowY = 'hidden';
   }
 
