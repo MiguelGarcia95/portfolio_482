@@ -50,7 +50,10 @@ class ShowWork extends React.Component {
 
   fetchProject = name => {
     return projects.reduce((fetchedProject, project) => {
-      
+      if (project.name === name) {
+        fetchedProject = project;
+      }
+      return fetchedProject;
     }, null)
   }
 
