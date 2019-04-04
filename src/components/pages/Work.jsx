@@ -38,8 +38,9 @@ class Work extends React.Component {
     }
   }
 
+  // https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png
+
   render() {
-    // console.log(projects)
     return (
       <WorkPageElm className='app work'>
         <h1>Work</h1>
