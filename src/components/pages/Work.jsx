@@ -24,11 +24,10 @@ class Work extends React.Component {
     }, 1000)
   }
 
-  componentWillUnmount() {
-    setInterval(() => {
-    }, 1000)
-    this.unloadContent();
-  }
+  // componentWillUnmount() {
+  //   setInterval(() => {
+  //   }, 1000)
+  // }
 
   loadContent = () => {
     const workContent = document.querySelector('.work_content');
@@ -42,8 +41,8 @@ class Work extends React.Component {
     const workContent = document.querySelector('.work_content');
     if (workContent) {
       workContent.style.height = '0px';
+      // document.querySelector('.work_content').style.overflow = 'auto';
     }
-    // document.querySelector('.work_content').style.overflow = 'auto';
   }
 
   render() {
@@ -51,7 +50,7 @@ class Work extends React.Component {
     return (
       <WorkPageElm className='app work'>
         <h1>Work</h1>
-        <Link to='/work/1' style={{marginTop: '-500px'}}>
+        <Link to='/work/1' style={{marginTop: '-500px'}} onClick={() => {this.unloadContent()}}>
           <h2>Go To work 1</h2>
         </Link>
         <section className='work_content' >
