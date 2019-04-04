@@ -18,8 +18,8 @@ const Home = () => {
   return (
     <HomePageElm className='app home'>
       <h1>Home</h1>
-      <Link to='/about'>
-        <h2>Go To About</h2>
+      <Link to='/work'>
+        <h2>Go To Work</h2>
       </Link>
     </HomePageElm>
   )

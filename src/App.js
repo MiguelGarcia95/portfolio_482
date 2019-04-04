@@ -3,7 +3,6 @@ import {Switch, BrowserRouter, Route, Redirect} from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from './components/pages/Home';
-import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import Work from './components/pages/Work';
 import styled from "styled-components";
@@ -33,7 +32,7 @@ const App = () => {
                   <Route exact path='/' component={Home} />
                   <Route exact path='/contact' component={Contact} />
                   <Route exact path='/work/:name' component={Work} />
-                  <Route path="/" render={() => <Redirect to="/"/>}/>
+                  {/* <Route render={() => <Redirect to="/contact"/>}/> */}
                 </Switch>
                 </CSSTransition>
               </TransitionGroup>

@@ -16,7 +16,7 @@ export const Page = styled.div`
     background-color: mediumslateblue;
   }
 
-  &.about {
+  &.work {
     background-color: burlywood;
   }
 

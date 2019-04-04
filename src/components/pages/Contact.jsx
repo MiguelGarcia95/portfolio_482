@@ -5,6 +5,8 @@ import styled, { keyframes } from "styled-components";
 import {Page} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 
+const emailjs = window.emailjs;
+
 const ContactPageElm = styled(Page)`
   &.page-enter {
     animation: ${slideInRight} 0.5s ease forwards;
@@ -15,6 +17,18 @@ const ContactPageElm = styled(Page)`
 `;
 
 class Contact extends React.Component {
+  state = {
+    name: '',
+    email: '',
+    message: '',
+    subject: '',
+    attachment: null
+  }
+
+  componentDidMount() {
+    emailjs.init("user_8o2vUClVi4MeQTPwf50P6")
+  }
+
   render() {
     return (
       <ContactPageElm className='app contact'>
