@@ -41,6 +41,10 @@ const WorkPageElm = styled(OverflowPage)`
 `;
 
 class Work extends React.Component {
+  componentDidMount() {
+    document.getElementById('root').style.overflowY = 'auto';
+  }
+
   render() {
     // console.log(projects)
     return (

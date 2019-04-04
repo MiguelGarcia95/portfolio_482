@@ -39,6 +39,10 @@ const ShowWorkPageElm = styled(Page)`
 `;
 
 class ShowWork extends React.Component {
+  componentDidMount() {
+    document.getElementById('root').style.overflowY = 'hidden';
+  }
+
   render() {
     const {workName} = this.props.match.params;
     console.log(workName);
