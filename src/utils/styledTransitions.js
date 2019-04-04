@@ -48,3 +48,27 @@ export const slideOutRight = keyframes`
     transform: translate3d(100%, 0, 0);
   }
 `;
+
+export const slideOutBottom = keyframes`
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: visible;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+`;
+
+export const slideInTop = keyframes`
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+`;
