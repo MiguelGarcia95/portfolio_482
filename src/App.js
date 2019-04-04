@@ -1,9 +1,11 @@
 import React from 'react';
-import {Switch, BrowserRouter, Route} from 'react-router-dom';
+import {Switch, BrowserRouter, Route, Redirect} from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Work from './components/pages/Work';
 import styled from "styled-components";
 
 const PageContainer = styled.div`
@@ -28,8 +30,11 @@ const App = () => {
                   key={location.key}
                 >
                 <Switch location={location} >
-                  <Route exact path='/about' component={About} />
                   <Route exact path='/' component={Home} />
+                  <Route exact path='/' component={Home} />
+                  <Route exact path='/contact' component={Contact} />
+                  <Route exact path='/work/:name' component={Work} />
+                  <Route path="/" render={() => <Redirect to="/"/>}/>
                 </Switch>
                 </CSSTransition>
               </TransitionGroup>
