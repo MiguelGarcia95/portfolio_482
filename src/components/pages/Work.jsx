@@ -43,7 +43,7 @@ class Work extends React.Component {
     return (
       <WorkPageElm className='app work'>
         <h1>Work</h1>
-        <Link to='/work/1' style={{marginTop: '-500px'}} onClick={() => {this.unloadContent()}}>
+        <Link to='/work/testing-data' style={{marginTop: '-500px'}} onClick={() => {this.unloadContent()}}>
           <h2>Go To work 1</h2>
         </Link>
         <section className='work_content' >

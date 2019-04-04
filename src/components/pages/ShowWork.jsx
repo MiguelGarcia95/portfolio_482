@@ -45,7 +45,8 @@ class ShowWork extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({workObject: this.fetchProject(this.props.match.params.workName)})
+    this.setState({workObject: ''});
+    this.setState({workObject: this.fetchProject(this.props.match.params.workName)});
     document.getElementById('root').style.overflowY = 'hidden';
   }
 
@@ -59,8 +60,8 @@ class ShowWork extends React.Component {
   }
 
   render() {
-    const {workName} = this.props.match.params;
-    console.log(workName);
+    const {workObject} = this.state;
+    console.log(workObject);
     return (
       <ShowWorkPageElm className='app show_work'>
         <h1>ShowWork</h1>
