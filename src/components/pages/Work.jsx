@@ -11,7 +11,6 @@ const WorkPageElm = styled(OverflowPage)`
     animation: ${slideInTop} 0.5s ease forwards;
   }
   &.page-exit {
-    animation-delay: 0.5s;
     animation: ${slideOutBottom} 0.5s ease forwards;
   }
 `;
@@ -24,17 +23,12 @@ class Work extends React.Component {
     }, 1000)
   }
 
-  // componentWillUnmount() {
-  //   setInterval(() => {
-  //   }, 1000)
-  // }
-
   loadContent = () => {
     const workContent = document.querySelector('.work_content');
     if (workContent) {
       workContent.style.height = '200px';
+      // document.querySelector('.work_content').style.overflow = 'auto';
     }
-    // document.querySelector('.work_content').style.overflow = 'auto';
   }
 
   unloadContent = () => {
