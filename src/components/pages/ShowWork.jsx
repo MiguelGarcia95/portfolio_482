@@ -5,12 +5,23 @@ import styled, { keyframes } from "styled-components";
 import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
 
+export const slideInTop2 = keyframes`
+  from {
+    transform: translate3d(0, ${window.innerHeight}px, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+`;
+
 const ShowWorkPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInTop} 0.5s ease forwards;
+    animation: ${slideInTop} 0.5s linear forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.5s ease forwards;
+    animation: ${slideOutBottom} 0.5s linear forwards;
   }
 `;
 

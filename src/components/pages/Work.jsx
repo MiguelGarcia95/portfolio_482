@@ -3,14 +3,25 @@ import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
 
 import {Page} from '../../utils/styledClasses';
-import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
+import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
+
+export const sss = keyframes`
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
 const WorkPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInRight} 0.5s ease forwards;
+    animation: ${slideInTop} 0.5s linear forwards;
   }
   &.page-exit {
-    animation: ${slideOutRight} 0.5s ease forwards;
+    animation: ${slideOutBottom} 0.5s linear forwards;
   }
 `;
 
