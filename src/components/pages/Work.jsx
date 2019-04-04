@@ -20,7 +20,7 @@ class Work extends React.Component {
     document.getElementById('root').style.overflowY = 'auto';
     setInterval(() => {
       this.loadContent();
-    }, 1000)
+    }, 500)
   }
 
   loadContent = () => {
