@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const WorkItem = ({work, unloadContent}) => {
+const WorkItem = ({project, unloadContent}) => {
   let imageStyle = {
-    backgroundImage: `url(https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png)`,
+    backgroundImage: `url(${project.imageUrl})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'

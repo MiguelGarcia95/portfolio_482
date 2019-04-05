@@ -45,7 +45,7 @@ class Work extends React.Component {
 
   displayWork = projects => {
     return projects.map(project => {
-      return <WorkItem key={project.name} unloadContent={this.unloadContent} />
+      return <WorkItem key={project.name} unloadContent={this.unloadContent} project={project}/>
     }) 
   }
 

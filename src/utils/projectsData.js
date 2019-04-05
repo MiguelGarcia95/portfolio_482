@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: 'testing-data',
-    imageUrl: 'testing-data.png',
+    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     about: 'testing data goes here...',
     details: 'noooo',
     tags: [
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     name: 'testing-data2',
-    imageUrl: 'testing-data2.png',
+    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     about: 'testing data goes here...',
     details: 'noooo',
     tags: [
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     name: 'testing-data3',
-    imageUrl: 'testing-data3.png',
+    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     about: 'testing data goes here...',
     details: 'noooo',
     tags: [
