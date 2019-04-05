@@ -17,4 +17,13 @@ export const projects = [
       'anime', 'gaming', 'random'
     ]
   },
+  {
+    name: 'testing-data3',
+    imageUrl: 'testing-data3.png',
+    about: 'testing data goes here...',
+    details: 'noooo',
+    tags: [
+      'anime', 'gaming', 'random'
+    ]
+  },
 ]
