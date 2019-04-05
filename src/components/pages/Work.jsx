@@ -40,7 +40,7 @@ class Work extends React.Component {
 
   getContentHeight = () => {
     //should depend on page size;
-    return `${Math.ceil(projects.length / 2) * 300}px`;
+    return `${(Math.ceil(projects.length / 2) * 350) + 50}px`;
   }
 
   displayWork = projects => {
