@@ -41,13 +41,19 @@ class Work extends React.Component {
   // https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png
 
   render() {
-
+    let imageStyle = {
+      backgroundImage: `url(https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png)`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      width: '100%',
+      height: '100%'
+    }
     return (
       <WorkPageElm className='app work'>
-        <h1>Work</h1>
         <section className='work_content' >
           <section className="work_item">
-            <section className="work_item_image"></section>
+            <section className="work_item_image" style={imageStyle} ></section>
             <Link to='/work/testing-data' onClick={() => {this.unloadContent()}}>
               <h2>Go 1</h2>
             </Link>
