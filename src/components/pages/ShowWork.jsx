@@ -45,26 +45,14 @@ class ShowWork extends React.Component {
   }
 
   componentDidMount() {
-    // this.setState({workObject: null});
-    // this.setState({workObject: this.fetchProject(this.props.match.params.workName)});
     document.getElementById('root').style.overflowY = 'hidden';
   }
 
-  // fetchProject = name => {
-  //   return projects.reduce((fetchedProject, project) => {
-  //     if (project.name === name) {
-  //       fetchedProject = project;
-  //     }
-  //     return fetchedProject;
-  //   }, null)
-  // }
-
   render() {
-    // const {workObject} = this.state;
     const {project} = this.props;
     return (
       <ShowWorkPageElm className='app show_work'>
-        <h1>ShowWork</h1>
+        <h1>{project.name}</h1>
         <Link to='/work'>
           <h2>Go To work</h2>
         </Link>

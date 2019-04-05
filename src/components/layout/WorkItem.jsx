@@ -14,7 +14,7 @@ const WorkItem = ({project, unloadContent}) => {
       <section className="work_item_details">
         <h2 className="work_item_name noselect">{project.name}</h2>
         <Link className='noselect' to={`/work/${project.name}`} onClick={() => {unloadContent()}}>
-          <h3>Go 1</h3>
+          <h3>Check Out</h3>
         </Link>
       </section>
     </section>
