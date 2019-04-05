@@ -17,6 +17,14 @@ body {
   overflow: hidden;
 }
 
+.noselect {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
 .work_content {
   position: absolute;
   top: 100px; 
@@ -32,10 +40,8 @@ body {
     float: left;
     padding: 20px;
     box-sizing: border-box;
-    // background-color: red;    
     position: relative;
     .work_item_image {
-      // display: none;
       width: 100%;
       height: 100%;
       width: 460px;
@@ -43,9 +49,18 @@ body {
       position: absolute;
     }
     a {
+      padding: 5px 10px;
+      width: 100px;
+      height: 30px;
+      background-color: rgb(120,50,158);
       position: absolute;
-      h2 {
-
+      left: 0; right: 0; top: 0; bottom: 0;
+      margin: auto;
+      color: white;
+      text-decoration: none; 
+      text-align: center;
+      h3 {
+        font-weight: 300;
       }
     }
   }
