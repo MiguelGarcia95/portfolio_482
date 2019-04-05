@@ -27,8 +27,7 @@ class Work extends React.Component {
   loadContent = () => {
     const workContent = document.querySelector('.work_content');
     if (workContent) {
-      workContent.style.height = '500px';
-      // document.querySelector('.work_content').style.overflow = 'auto';
+      workContent.style.height = this.getContentHeight();
     }
   }
 
@@ -36,8 +35,12 @@ class Work extends React.Component {
     const workContent = document.querySelector('.work_content');
     if (workContent) {
       workContent.style.height = '0px';
-      // document.querySelector('.work_content').style.overflow = 'auto';
     }
+  }
+
+  getContentHeight = () => {
+    //should depend on page size;
+    return `${Math.ceil(projects.length / 2) * 300}px`;
   }
 
   displayWork = projects => {
