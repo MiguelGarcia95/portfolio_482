@@ -41,6 +41,9 @@ body {
     padding: 20px;
     box-sizing: border-box;
     position: relative;
+    &:last-of-type {
+      margin-bottom: 100px;
+    }
     .work_item_image {
       width: 460px;
       height: 260px;
@@ -75,6 +78,9 @@ body {
         top: 50px;
         text-transform: capitalize;
         font-weight: 300;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
     }
   }
