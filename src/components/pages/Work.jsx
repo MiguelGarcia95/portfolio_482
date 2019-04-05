@@ -42,14 +42,7 @@ class Work extends React.Component {
   // https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png
 
   render() {
-    let imageStyle = {
-      backgroundImage: `url(https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png)`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100%',
-      height: '100%'
-    }
+    
     // Math.ceil(5/2)
     return (
       <WorkPageElm className='app work'>
