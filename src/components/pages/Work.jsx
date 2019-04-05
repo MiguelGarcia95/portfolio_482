@@ -41,14 +41,17 @@ class Work extends React.Component {
   // https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png
 
   render() {
+
     return (
       <WorkPageElm className='app work'>
         <h1>Work</h1>
-        <Link to='/work/testing-data' style={{marginTop: '-500px'}} onClick={() => {this.unloadContent()}}>
-          <h2>Go To work 1</h2>
-        </Link>
         <section className='work_content' >
-
+          <section className="work_item">
+            <section className="work_item_image"></section>
+            <Link to='/work/testing-data' onClick={() => {this.unloadContent()}}>
+              <h2>Go 1</h2>
+            </Link>
+          </section>
         </section>
       </WorkPageElm>
     )
