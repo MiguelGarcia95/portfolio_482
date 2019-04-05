@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
-import {projects} from '../../utils/projectsData';
+// import {projects} from '../../utils/projectsData';
 
 import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
@@ -45,23 +45,23 @@ class ShowWork extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({workObject: null});
-    this.setState({workObject: this.fetchProject(this.props.match.params.workName)});
+    // this.setState({workObject: null});
+    // this.setState({workObject: this.fetchProject(this.props.match.params.workName)});
     document.getElementById('root').style.overflowY = 'hidden';
   }
 
-  fetchProject = name => {
-    return projects.reduce((fetchedProject, project) => {
-      if (project.name === name) {
-        fetchedProject = project;
-      }
-      return fetchedProject;
-    }, null)
-  }
+  // fetchProject = name => {
+  //   return projects.reduce((fetchedProject, project) => {
+  //     if (project.name === name) {
+  //       fetchedProject = project;
+  //     }
+  //     return fetchedProject;
+  //   }, null)
+  // }
 
   render() {
-    const {workObject} = this.state;
-    console.log(workObject);
+    // const {workObject} = this.state;
+    const {project} = this.props;
     return (
       <ShowWorkPageElm className='app show_work'>
         <h1>ShowWork</h1>

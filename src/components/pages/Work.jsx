@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
-import {projects} from '../../utils/projectsData';
 
+import {projects} from '../../utils/projectsData';
 import WorkItem from '../layout/WorkItem';
 import {Page, OverflowPage} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
