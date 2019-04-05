@@ -23,17 +23,24 @@ body {
   left: 0; right: 0;
   margin: auto;
   height: 0px;
-  background-color: red;
   transition: 0.5s;
   width: 1000px;
   transition-delay: 200ms;
+  overflow: hidden;
   .work_item {
+    width: 500px; height: 300px;
+    float: left;
+    margin: 20px;
+    background-color: red;    
+    position: relative;
     .work_item_image {
-
+      // display: none;
+      position: absolute;
     }
     a {
+      position: absolute;
       h2 {
-        
+
       }
     }
   }

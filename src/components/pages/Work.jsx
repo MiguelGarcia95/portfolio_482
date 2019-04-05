@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
 
+import WorkItem from '../layout/WorkItem';
 import {Page, OverflowPage} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
 
@@ -25,7 +26,7 @@ class Work extends React.Component {
   loadContent = () => {
     const workContent = document.querySelector('.work_content');
     if (workContent) {
-      workContent.style.height = '200px';
+      workContent.style.height = '500px';
       // document.querySelector('.work_content').style.overflow = 'auto';
     }
   }
@@ -49,15 +50,11 @@ class Work extends React.Component {
       width: '100%',
       height: '100%'
     }
+    // Math.ceil(5/2)
     return (
       <WorkPageElm className='app work'>
         <section className='work_content' >
-          <section className="work_item">
-            <section className="work_item_image" style={imageStyle} ></section>
-            <Link to='/work/testing-data' onClick={() => {this.unloadContent()}}>
-              <h2>Go 1</h2>
-            </Link>
-          </section>
+          <WorkItem />
         </section>
       </WorkPageElm>
     )
