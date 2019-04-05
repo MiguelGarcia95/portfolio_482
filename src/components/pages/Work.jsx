@@ -48,6 +48,7 @@ class Work extends React.Component {
       <WorkPageElm className='app work'>
         <section className='work_content' >
           <WorkItem />
+          <WorkItem />
         </section>
       </WorkPageElm>
     )
