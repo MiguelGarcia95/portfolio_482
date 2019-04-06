@@ -7,7 +7,9 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
+    "react-slick": "^0.23.2",
     "react-transition-group": "^2.8.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^4.2.0"
   },
   "scripts": {
