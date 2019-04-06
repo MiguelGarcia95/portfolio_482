@@ -3,17 +3,17 @@ import Slider from "react-slick";
 
 const ProjectSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
   };
   return (
-    <div>
+    <section className='project_slider'>
       <h2> Single Item</h2>
-      <Slider {...settings}>
-        <div>
+      {/* <Slider {...settings}>
+        <div style={{background: 'red',}}>
           <h3>1</h3>
         </div>
         <div>
@@ -31,8 +31,8 @@ const ProjectSlider = () => {
         <div>
           <h3>6</h3>
         </div>
-      </Slider>
-    </div>
+      </Slider> */}
+    </section>
   );
 }
 
