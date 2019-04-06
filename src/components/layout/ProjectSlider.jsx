@@ -35,3 +35,5 @@ const ProjectSlider = () => {
     </div>
   );
 }
+
+export default ProjectSlider;

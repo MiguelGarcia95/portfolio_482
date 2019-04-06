@@ -71,6 +71,7 @@ class ShowWork extends React.Component {
         {project && (
           <React.Fragment>
             <h1>{project.name}</h1>
+            <ProjectSlider />
             <Link to='/work'>
               <h2>Go To work</h2>
             </Link>
