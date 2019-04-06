@@ -19,25 +19,10 @@ const ProjectSlider = () => {
   return (
     <section className='project_slider'>
       <Slider {...settings} className='project_slider_slider'>
-
-        <div style={{background: 'red',}}>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
+        {/* {displaySlides()} */}
+        <ProjectSliderSlide />
+        <ProjectSliderSlide />
+        <ProjectSliderSlide />
       </Slider>
     </section>
   );
