@@ -11,18 +11,6 @@ export const Page = styled.div`
   position: absolute;
   color: white;
   overflow: hidden;
-  
-  &.home {
-    background-color: mediumslateblue;
-  }
-
-  &.work {
-    background-color: burlywood;
-  }
-
-  &.show_work {
-    background-color: olive;
-  }
 
   h1 {
     font-weight: 300;
@@ -57,19 +45,6 @@ export const OverflowPage = styled.div`
   color: white;
   overflow: auto;
   
-  &.home {
-    background-color: mediumslateblue;
-  }
-
-  &.work {
-    background-color: burlywood;
-    overflow: auto;
-  }
-
-  &.show_work {
-    background-color: olive;
-  }
-
   h1 {
     font-weight: 300;
     color: white;
