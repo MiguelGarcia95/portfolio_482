@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from "react-slick";
+import ProjectSliderSlide from './ProjectSliderSlide';
 
 const ProjectSlider = () => {
   const settings = {
@@ -11,8 +12,8 @@ const ProjectSlider = () => {
   };
   return (
     <section className='project_slider'>
-      <h2> Single Item</h2>
-      {/* <Slider {...settings}>
+      <Slider {...settings} className='project_slider_slider'>
+
         <div style={{background: 'red',}}>
           <h3>1</h3>
         </div>
@@ -31,7 +32,7 @@ const ProjectSlider = () => {
         <div>
           <h3>6</h3>
         </div>
-      </Slider> */}
+      </Slider>
     </section>
   );
 }
