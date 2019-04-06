@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import ProjectSliderSlide from './ProjectSliderSlide';
 
-displaySlides = slides => {
+const displaySlides = slides => {
   return slides.map((slide, index) => {
     return <ProjectSliderSlide key={index} />
   })
