@@ -70,8 +70,8 @@ class ShowWork extends React.Component {
       <ShowWorkPageElm className='app show_work'>
         {project && (
           <React.Fragment>
-            <h1>{project.name}</h1>
             <ProjectSlider />
+            <h1>{project.name}</h1>
             <Link to='/work'>
               <h2>Go To work</h2>
             </Link>
