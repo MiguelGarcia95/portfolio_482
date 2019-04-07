@@ -83,7 +83,7 @@ class ShowWork extends React.Component {
               <h2>Scroll Down</h2>
               <section id="chevron-arrow-down" onClick={() => this.scrollDown()}></section>
             </section>
-            <section style={{height: '600px', width: '100%', background: 'red'}}>
+            <section style={{height: '1600px', width: '100%', background: 'red'}}>
               <div ref={node => this.pageDown = node}></div>
             </section>
           </React.Fragment>
