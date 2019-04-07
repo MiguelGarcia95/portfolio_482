@@ -3,14 +3,13 @@ import styled from "styled-components";
 export const Page = styled.div`
   width: 100vw;
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: absolute;
   color: white;
-  overflow: hidden;
 
   h1 {
     font-weight: 300;
