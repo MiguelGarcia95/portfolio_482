@@ -79,7 +79,7 @@ class ShowWork extends React.Component {
               <h2>Scroll Down</h2>
               <section id="chevron-arrow-down"></section>
             </section>
-            <ProjectSlider />
+            <section style={{height: '2000px', width: '100%', background: 'red'}}></section>
           </React.Fragment>
         )}
       </ShowWorkPageElm>
