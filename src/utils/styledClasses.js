@@ -26,11 +26,6 @@ export const Page = styled.div`
     margin: 20px auto;
     color: #37474f;
   }
-  a {
-    color: white;
-    text-decoration: none; 
-    margin-top: 50px;
-  }
 `;
 
 export const OverflowPage = styled.div`
