@@ -62,6 +62,11 @@ class ShowWork extends React.Component {
     }, null)
   }
 
+  scrollDown = () => {
+    this.pageDown.scrollIntoView({behavior: 'smooth'});
+  }
+
+
   render() {
     const {project} = this.state;
     return (
@@ -76,7 +81,10 @@ class ShowWork extends React.Component {
             </Link>
             <section className="scroll_down">
               <h2>Scroll Down</h2>
-              <section id="chevron-arrow-down"></section>
+              <section id="chevron-arrow-down" onClick={() => this.scrollDown()}></section>
+            </section>
+            <section style={{height: '600px', width: '100%', background: 'red'}}>
+              <div ref={node => this.pageDown = node}></div>
             </section>
           </React.Fragment>
         )}
