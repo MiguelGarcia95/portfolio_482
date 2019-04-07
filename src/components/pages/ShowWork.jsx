@@ -51,7 +51,7 @@ class ShowWork extends React.Component {
   componentDidMount() {
     this.setState({project: null});
     this.setState({project: this.fetchProject(this.props.match.params.workName)});
-    document.getElementById('root').style.overflowY = 'hidden';
+    // document.getElementById('root').style.overflowY = 'hidden';
   }
 
   fetchProject = name => {
