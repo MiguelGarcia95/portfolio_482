@@ -74,13 +74,12 @@ class ShowWork extends React.Component {
               <h1 className="show_work_name">{project.name}</h1>
             </section>
             <Link className='show_work_back' id="chevron-arrow-left" to='/work'>
-              {/* <section id="chevron-arrow-left"></section> */}
             </Link>
             <section className="scroll_down">
               <h2>Scroll Down</h2>
-              {/* <i className="fas fa-chevron-down fa-4x"></i> */}
               <section id="chevron-arrow-down"></section>
             </section>
+            <ProjectSlider />
           </React.Fragment>
         )}
       </ShowWorkPageElm>
