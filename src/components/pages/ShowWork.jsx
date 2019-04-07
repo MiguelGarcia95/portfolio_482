@@ -75,11 +75,13 @@ class ShowWork extends React.Component {
             </section>
             <Link className='show_work_back' to='/work'>
               <h2>Go To work</h2>
-              <i className="fas fa-chevron-left"></i>
+              {/* <i className="fas fa-chevron-left fa-4x"></i> */}
+              <section id="chevron-arrow-left"></section>
             </Link>
             <section className="scroll_down">
               <h2>Scroll Down</h2>
-              <i className="fas fa-chevron-down"></i>
+              {/* <i className="fas fa-chevron-down fa-4x"></i> */}
+              <section id="chevron-arrow-down"></section>
             </section>
           </React.Fragment>
         )}
