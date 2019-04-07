@@ -65,13 +65,15 @@ class ShowWork extends React.Component {
 
   render() {
     const {project} = this.state;
-    // const {project} = this.props;
     return (
       <ShowWorkPageElm className='app show_work'>
         {project && (
           <React.Fragment>
-            <ProjectSlider />
-            <h1>{project.name}</h1>
+            <section className="show_work_display">
+              <ProjectSlider />
+              <h1>{project.name}</h1>
+            </section>
+            
             <Link to='/work'>
               <h2>Go To work</h2>
             </Link>
