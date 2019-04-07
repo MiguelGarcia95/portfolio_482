@@ -51,7 +51,6 @@ class ShowWork extends React.Component {
   componentDidMount() {
     this.setState({project: null});
     this.setState({project: this.fetchProject(this.props.match.params.workName)});
-    // document.getElementById('root').style.overflowY = 'hidden';
   }
 
   fetchProject = name => {
@@ -79,7 +78,6 @@ class ShowWork extends React.Component {
               <h2>Scroll Down</h2>
               <section id="chevron-arrow-down"></section>
             </section>
-            <section style={{height: '2000px', width: '100%', background: 'red'}}></section>
           </React.Fragment>
         )}
       </ShowWorkPageElm>
