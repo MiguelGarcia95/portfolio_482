@@ -52,7 +52,9 @@ class Work extends React.Component {
     return (
       <WorkPageElm className='app work'>
         <section className="nav_menu">
-          
+          <p>Home</p>
+          <p>Work</p>
+          <p>Contact</p>
         </section>
         <section className='work_content' >
           {this.displayWork(projects)}
