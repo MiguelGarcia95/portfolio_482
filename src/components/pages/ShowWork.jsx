@@ -9,6 +9,7 @@ import {projects} from '../../utils/projectsData';
 import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
 import ProjectSlider from '../layout/ProjectSlider';
+import Navbar from '../layout/Navbar';
 
 export const fadeIn = keyframes`
   from {
@@ -70,6 +71,7 @@ class ShowWork extends React.Component {
     const {project} = this.state;
     return (
       <ShowWorkPageElm className='app show_work'>
+        <Navbar />
         {project && (
           <React.Fragment>
             <section className="show_work_display">
