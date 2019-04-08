@@ -1,1 +1,1 @@
-.nav_menu{position:fixed;top:0;right:40px;writing-mode:vertical-rl;text-orientation:mixed;z-index:100}.nav_menu a{float:left;color:white;text-decoration:none}.nav_menu a p{float:left;color:white}.nav_menu a.active p{font-weight:600}
+.nav_menu{position:fixed;top:0;right:40px;writing-mode:vertical-rl;text-orientation:mixed;z-index:100}.nav_menu a{float:left;color:white;text-decoration:none}.nav_menu a p{float:left;color:white}.nav_menu a.active p{font-weight:600;padding-left:5px;border-left:1px solid white}
