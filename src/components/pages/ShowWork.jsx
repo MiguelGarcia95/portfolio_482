@@ -75,8 +75,10 @@ class ShowWork extends React.Component {
         {project && (
           <React.Fragment>
             <section className="show_work_display">
+              <section className="show_work_display_header">
+                <h1 className="show_work_name">{project.name}</h1>
+              </section>
               <ProjectSlider images={project.images} />
-              <h1 className="show_work_name">{project.name}</h1>
             </section>
             <Link className='show_work_back' id="chevron-arrow-left" to='/work'>
             </Link>
