@@ -66,7 +66,6 @@ class ShowWork extends React.Component {
     this.pageDown.scrollIntoView({behavior: 'smooth'});
   }
 
-
   render() {
     const {project} = this.state;
     return (
