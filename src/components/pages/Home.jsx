@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
 
 import {Page} from '../../utils/styledClasses';
@@ -20,9 +20,6 @@ const Home = () => {
     <HomePageElm className='app home'>
       <Navbar />
       <h1>Home</h1>
-      <Link to='/work'>
-        <h2>Go To Work</h2>
-      </Link>
     </HomePageElm>
   )
 }
