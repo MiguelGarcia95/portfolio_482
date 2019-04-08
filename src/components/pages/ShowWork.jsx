@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
-
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
@@ -10,6 +9,7 @@ import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
 import ProjectSlider from '../layout/ProjectSlider';
 import Navbar from '../layout/Navbar';
+import './css/ShowWork.css';
 
 export const fadeIn = keyframes`
   from {

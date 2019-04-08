@@ -7,6 +7,8 @@ import WorkItem from '../layout/WorkItem';
 import Navbar from '../layout/Navbar';
 import {Page, OverflowPage} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
+import './css/Work.css';
+
 
 const WorkPageElm = styled(OverflowPage)`
   &.page-enter {
