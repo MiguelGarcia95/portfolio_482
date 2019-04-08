@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 import {projects} from '../../utils/projectsData';
 import WorkItem from '../layout/WorkItem';
+import Navbar from '../layout/Navbar';
 import {Page, OverflowPage} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
 
@@ -51,11 +52,7 @@ class Work extends React.Component {
   render() {
     return (
       <WorkPageElm className='app work'>
-        <section className="nav_menu">
-          <Link to='/'><p>Home</p></Link>
-          <Link to='work'><p>Work</p></Link>
-          <Link to='contact'><p>Contact</p></Link>          
-        </section>
+        <Navbar />
         <section className='work_content' >
           {this.displayWork(projects)}
         </section>
