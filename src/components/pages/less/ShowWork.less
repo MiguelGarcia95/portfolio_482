@@ -10,7 +10,24 @@
     position: absolute;
     position: relative;
     .show_work_display_header {
+      width: 70vw; max-width: 70%;
+      overflow: hidden;
+      margin: auto;
 
+      .show_work_link {
+        float: right;
+      }
+      .show_work_name {
+        // width: 70vw; max-width: 70%;
+        // margin-left: 15vw;
+        // overflow: hidden;
+        float: left;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        line-height: 70px;
+        font-weight: 300;      
+        font-size: 2em;
+      }
     }
     
     .project_slider {
@@ -29,16 +46,6 @@
           height: 70vh;
         } 
       }
-    }
-    .show_work_name {
-      width: 70vw; max-width: 70%;
-      margin-left: 15vw;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      line-height: 70px;
-      font-weight: 300;      
-      font-size: 2em;
     }
   }
   .show_work_back {
