@@ -6,7 +6,7 @@ const Navbar = () => {
     <section className="nav_menu">
       <Link to='/' className='noselect' ><p>Home</p></Link>
       <Link to='work' className='noselect' ><p>Work</p></Link>
-      <Link to='contact' className='noselect'  ><p>Contact</p></Link>          
+      <Link to='contact' className='noselect' ><p>Contact</p></Link>          
     </section>
   )
 }

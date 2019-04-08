@@ -3,12 +3,12 @@ import Slider from "react-slick";
 import ProjectSliderSlide from './ProjectSliderSlide';
 
 const displaySlides = slides => {
-  return slides.map((slide, index) => {
-    return <ProjectSliderSlide key={index} />
+  return slides.map((image, index) => {
+    return <ProjectSliderSlide key={index} image={image} />
   })
 }
 
-const ProjectSlider = () => {
+const ProjectSlider = ({images}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -19,10 +19,10 @@ const ProjectSlider = () => {
   return (
     <section className='project_slider'>
       <Slider {...settings} className='project_slider_slider'>
-        {/* {displaySlides()} */}
-        <ProjectSliderSlide color='grey' />
+        {displaySlides(images)}
+        {/* <ProjectSliderSlide color='grey' />
         <ProjectSliderSlide color='skyblue' />
-        <ProjectSliderSlide color='blue' />
+        <ProjectSliderSlide color='blue' /> */}
       </Slider>
     </section>
   );

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ProjectSliderSlide = ({color}) => {
+const ProjectSliderSlide = ({image}) => {
+  
   return (
     <section className='project_image_slide' style={{backgroundColor: color}}>
-      {/* <h1>ss</h1> */}
     </section>
   );
 }
