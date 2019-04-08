@@ -4,7 +4,7 @@ const ProjectSliderSlide = ({image}) => {
   let imageStyle = {
     backgroundImage: `url(${image})`,
     backgroundPosition: 'center',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat'
   }
   return (
