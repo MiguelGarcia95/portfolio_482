@@ -18,7 +18,6 @@ const WorkPageElm = styled(OverflowPage)`
 
 class Work extends React.Component {
   componentDidMount() {
-    // document.getElementById('root').style.overflowY = 'auto';
     setInterval(() => {
       this.loadContent();
     }, 500)
@@ -52,6 +51,9 @@ class Work extends React.Component {
   render() {
     return (
       <WorkPageElm className='app work'>
+        <section className="nav_menu">
+          
+        </section>
         <section className='work_content' >
           {this.displayWork(projects)}
         </section>
