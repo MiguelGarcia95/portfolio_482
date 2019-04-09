@@ -72,7 +72,7 @@ class Contact extends React.Component {
               <label htmlFor="subject">Subject</label>
               <input type="text" name='subject'/>
             </section>
-            <section className="contact_form_section">
+            <section className="contact_form_section form_textarea">
               <label htmlFor="message">Message</label>
               <textarea name="message"></textarea>
             </section>
