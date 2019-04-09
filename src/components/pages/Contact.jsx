@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 import {EMAILJSUSER} from '../../apiKeys';
 import {Page} from '../../utils/styledClasses';
+import {loadContent} from '../../utils/functions';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
 import './css/Contact.css';
@@ -25,13 +26,15 @@ class Contact extends React.Component {
     email: '',
     message: '',
     subject: '',
+    errors: [],
     attachment: null
   }
 
   componentDidMount() {
     emailjs.init("user_8o2vUClVi4MeQTPwf50P6");
     setInterval(() => {
-      this.loadContent();
+      // this.loadContent();
+      loadContent('.contact_content', '605px');
     }, 500);
   }
 
@@ -41,12 +44,12 @@ class Contact extends React.Component {
     }, 500);
   }
 
-  loadContent = () => {
-    const contactContent = document.querySelector('.contact_content');
-    if (contactContent) {
-      contactContent.style.height = '605px';
-    }
-  }
+  // loadContent = () => {
+  //   const contactContent = document.querySelector('.contact_content');
+  //   if (contactContent) {
+  //     contactContent.style.height = '605px';
+  //   }
+  // }
 
   unloadContent = () => {
     const contactContent = document.querySelector('.contact_content');
