@@ -34,6 +34,12 @@ class Contact extends React.Component {
     }, 500);
   }
 
+  compoenntWillUnmount() {
+    setInterval(() => {
+      this.unloadContent();
+    }, 500);
+  }
+
   loadContent = () => {
     const contactContent = document.querySelector('.contact_content');
     if (contactContent) {
@@ -47,11 +53,6 @@ class Contact extends React.Component {
       contactContent.style.height = '0px';
     }
   }
-
-  // getContentHeight = () => {
-  //   //should depend on page size;
-  //   return `${(Math.ceil(projects.length / 2) * 350) + 50}px`;
-  // }
 
   render() {
     return (
