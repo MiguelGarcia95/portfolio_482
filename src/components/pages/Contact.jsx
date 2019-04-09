@@ -31,9 +31,8 @@ class Contact extends React.Component {
   }
 
   componentDidMount() {
-    emailjs.init("user_8o2vUClVi4MeQTPwf50P6");
+    emailjs.init(EMAILJSUSER);
     setInterval(() => {
-      // this.loadContent();
       loadContent('.contact_content', '605px');
     }, 500);
   }
@@ -43,13 +42,6 @@ class Contact extends React.Component {
       unloadContent('.contact_content');
     }, 500);
   }
-
-  // unloadContent = () => {
-  //   const contactContent = document.querySelector('.contact_content');
-  //   if (contactContent) {
-  //     contactContent.style.height = '0px';
-  //   }
-  // }
 
   onFormChange = e => this.setState({[e.target.name]: e.target.value});
 
