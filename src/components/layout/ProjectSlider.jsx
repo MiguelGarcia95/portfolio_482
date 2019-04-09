@@ -20,9 +20,6 @@ const ProjectSlider = ({images}) => {
     <section className='project_slider'>
       <Slider {...settings} className='project_slider_slider'>
         {displaySlides(images)}
-        {/* <ProjectSliderSlide color='grey' />
-        <ProjectSliderSlide color='skyblue' />
-        <ProjectSliderSlide color='blue' /> */}
       </Slider>
     </section>
   );
