@@ -55,6 +55,8 @@ class Contact extends React.Component {
     }
   }
 
+  onFormChange = e => this.setstate({[e.target.name]: e.target.value});
+
   sendMessage = () => {
     let emailParams  = {
       from_name: `${this.state.name} (${this.state.email})`,
@@ -86,19 +88,19 @@ class Contact extends React.Component {
           <section className="contact_form">
             <section className="contact_form_section">
               <label htmlFor="name">Name</label>
-              <input type="text" name='name'/>
+              <input type="text" name='name' onChnage={this.onFormChange} />
             </section>
             <section className="contact_form_section">
               <label htmlFor="email">Email</label>
-              <input type="email" name='email'/>
+              <input type="email" name='email' onChnage={this.onFormChange} />
             </section>
             <section className="contact_form_section">
               <label htmlFor="subject">Subject</label>
-              <input type="text" name='subject'/>
+              <input type="text" name='subject' onChnage={this.onFormChange} />
             </section>
             <section className="contact_form_section form_textarea">
               <label htmlFor="message">Message</label>
-              <textarea name="message"></textarea>
+              <textarea name="message" onChnage={this.onFormChange} ></textarea>
             </section>
             <button onClick={() => this.sendMessage()}>Send</button>
           </section>
