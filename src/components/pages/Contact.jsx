@@ -100,6 +100,7 @@ class Contact extends React.Component {
               <label htmlFor="message">Message</label>
               <textarea name="message"></textarea>
             </section>
+            <button>Send</button>
           </section>
         </section>
       </ContactPageElm>
