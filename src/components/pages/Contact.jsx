@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, { keyframes } from "styled-components";
 
+import {EMAILJSUSER} from '../../apiKeys';
 import {Page} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
@@ -62,7 +63,7 @@ class Contact extends React.Component {
       message_html: this.state.message
     }
 
-    emailjs.send('gmail', 'template_HRhsUBvq', emailParams, 'userId').then(response => {
+    emailjs.send('gmail', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(response => {
       console.log('message send ', response.status, response.text)
     }, err => {
       console.log(err);
