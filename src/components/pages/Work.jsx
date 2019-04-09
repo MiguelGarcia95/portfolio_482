@@ -6,6 +6,7 @@ import {projects} from '../../utils/projectsData';
 import WorkItem from '../layout/WorkItem';
 import Navbar from '../layout/Navbar';
 import {Page, OverflowPage} from '../../utils/styledClasses';
+import {loadContent, unloadContent} from '../../utils/functions';
 import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
 import './css/Work.css';
 
@@ -22,22 +23,8 @@ const WorkPageElm = styled(OverflowPage)`
 class Work extends React.Component {
   componentDidMount() {
     setInterval(() => {
-      this.loadContent();
+      loadContent('.work_content', this.getContentHeight());
     }, 500)
-  }
-
-  loadContent = () => {
-    const workContent = document.querySelector('.work_content');
-    if (workContent) {
-      workContent.style.height = this.getContentHeight();
-    }
-  }
-
-  unloadContent = () => {
-    const workContent = document.querySelector('.work_content');
-    if (workContent) {
-      workContent.style.height = '0px';
-    }
   }
 
   getContentHeight = () => {
@@ -47,7 +34,7 @@ class Work extends React.Component {
 
   displayWork = projects => {
     return projects.map(project => {
-      return <WorkItem key={project.name} unloadContent={this.unloadContent} project={project}/>
+      return <WorkItem key={project.name} unloadContent={unloadContent} project={project}/>
     }) 
   }
 
