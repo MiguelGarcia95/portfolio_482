@@ -63,7 +63,7 @@ class Contact extends React.Component {
       message_html: this.state.message
     }
 
-    emailjs.send('gmail', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(response => {
+    emailjs.send('sendgrid', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(response => {
       console.log('message send ', response.status, response.text)
     }, err => {
       console.log(err);
