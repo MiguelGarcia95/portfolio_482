@@ -60,7 +60,22 @@ class Contact extends React.Component {
         <section className="contact_content">
           <h1>Contact</h1>
           <section className="contact_form">
-
+            <section className="contact_form_section">
+              <label htmlFor="name">Name</label>
+              <input type="text" name='name'/>
+            </section>
+            <section className="contact_form_section">
+              <label htmlFor="email">Email</label>
+              <input type="email" name='email'/>
+            </section>
+            <section className="contact_form_section">
+              <label htmlFor="subject">Subject</label>
+              <input type="text" name='subject'/>
+            </section>
+            <section className="contact_form_section">
+              <label htmlFor="message">Message</label>
+              <textarea name="message"></textarea>
+            </section>
           </section>
         </section>
       </ContactPageElm>
