@@ -55,7 +55,25 @@ class Contact extends React.Component {
   }
 
   sendMessage = () => {
-    
+    let emailParams  = {
+      from_name: `${this.state.name} (${this.state.email})`,
+      to_name: 'mgarcia95951@gmail.com',
+      subject: this.state.subject,
+      message_html: this.state.message
+    }
+
+    emailjs.send('gmail', 'template_HRhsUBvq', emailParams, 'userId').then(response => {
+      console.log('message send ', response.status, response.text)
+    }, err => {
+      console.log(err);
+    })
+
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+      subject: ''
+    })
   }
 
   render() {
