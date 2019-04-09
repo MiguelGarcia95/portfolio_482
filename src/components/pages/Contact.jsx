@@ -28,7 +28,10 @@ class Contact extends React.Component {
   }
 
   componentDidMount() {
-    emailjs.init("user_8o2vUClVi4MeQTPwf50P6")
+    emailjs.init("user_8o2vUClVi4MeQTPwf50P6");
+    setInterval(() => {
+      this.loadContent();
+    }, 500);
   }
 
   render() {
@@ -37,8 +40,8 @@ class Contact extends React.Component {
         <Navbar />
         <section className="contact_content">
           <h1>Contact</h1>
-          <section className="form">
-            
+          <section className="contact_form">
+
           </section>
         </section>
       </ContactPageElm>
