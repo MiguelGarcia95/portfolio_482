@@ -54,6 +54,10 @@ class Contact extends React.Component {
     }
   }
 
+  sendMessage = () => {
+    
+  }
+
   render() {
     return (
       <ContactPageElm className='app contact'>
