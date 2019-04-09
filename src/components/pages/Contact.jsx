@@ -44,7 +44,7 @@ class Contact extends React.Component {
   loadContent = () => {
     const contactContent = document.querySelector('.contact_content');
     if (contactContent) {
-      contactContent.style.height = '530px';
+      contactContent.style.height = '580px';
     }
   }
 
@@ -100,7 +100,7 @@ class Contact extends React.Component {
               <label htmlFor="message">Message</label>
               <textarea name="message"></textarea>
             </section>
-            <button>Send</button>
+            <button onClick={() => this.sendMessage()}>Send</button>
           </section>
         </section>
       </ContactPageElm>
