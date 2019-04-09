@@ -58,7 +58,7 @@ class Contact extends React.Component {
       <ContactPageElm className='app contact'>
         <Navbar />
         <section className="contact_content">
-          <h1>Contact</h1>
+          <h1 className='contact_title'>Contact</h1>
           <section className="contact_form">
             <section className="contact_form_section">
               <label htmlFor="name">Name</label>
