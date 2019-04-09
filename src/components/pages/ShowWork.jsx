@@ -81,14 +81,24 @@ class ShowWork extends React.Component {
               </section>
               <ProjectSlider images={project.images} />
             </section>
-            <Link className='show_work_back' id="chevron-arrow-left" to='/work'>
-            </Link>
+            <Link className='show_work_back' id="chevron-arrow-left" to='/work'></Link>
             <section className="scroll_down">
               <h2>Scroll Down</h2>
               <section id="chevron-arrow-down" onClick={() => this.scrollDown()}></section>
             </section>
+
             <section style={{height: '1600px', width: '100%', background: 'red'}}>
               <div ref={node => this.pageDown = node}></div>
+            </section>
+
+            <section className="show_work_content">
+              <section className="show_work_tags"></section>
+              <section className="show_work_about">
+                <p>
+                  Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Vulgtm sll'ha li'hee goka, naooboshu f'n'ghft ep 'ai goka Cthulhu f'geb orr'e, s'uhn grah'n vulgtm nnngeb cgnaiih uaaah vulgtm mg.
+                  Ee shugg Shub-Niggurath k'yarnak wgah'n lloig syha'h hafh'drn, sgn'wahlog lloig phlegeth wgah'n syha'h 'ai, r'luh lloigor lw'nafh stell'bsna ep vulgtmagl. Goka y'hah h'throd 'bthnk naehye hlirgh gotha lloignyth h'nog syha'h s'uhn, ftaghu nw tharanak Yoggoth orr'e h'uln n'gha kadishtu nnnsyha'h, nglw'nafh Tsathoggua hupadgh ah ron fm'latgh hlirgh s'uhnyar lw'nafh. Nw naflAzathoth ya lw'nafhnyth y-tharanak naNyarlathotep, syha'h li'hee h'Tsathoggua fhtagn ehye f'mg, sll'ha nnnHastur ah ep.
+                </p>
+              </section>
             </section>
           </React.Fragment>
         )}
