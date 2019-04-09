@@ -106,7 +106,6 @@ class ShowWork extends React.Component {
                 </p>
               </section>
               <section className="show_work_more">
-                {/* <a href="linkhere.com" className="show_work_link show_work_contact_link">Visit Page</a> */}
                 <a href="linkhere.com" className="show_work_contact_link">Visit Page</a>
                 <Link className='show_work_contact' to='/contact'>Contact</Link>            
               </section>
