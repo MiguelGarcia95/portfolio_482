@@ -34,6 +34,25 @@ class Contact extends React.Component {
     }, 500);
   }
 
+  loadContent = () => {
+    const contactContent = document.querySelector('.contact_content');
+    if (contactContent) {
+      contactContent.style.height = '400px';
+    }
+  }
+
+  unloadContent = () => {
+    const contactContent = document.querySelector('.contact_content');
+    if (contactContent) {
+      contactContent.style.height = '0px';
+    }
+  }
+
+  // getContentHeight = () => {
+  //   //should depend on page size;
+  //   return `${(Math.ceil(projects.length / 2) * 350) + 50}px`;
+  // }
+
   render() {
     return (
       <ContactPageElm className='app contact'>
