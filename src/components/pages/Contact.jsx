@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 import {Page} from '../../utils/styledClasses';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
+import Navbar from '../layout/Navbar';
 
 const emailjs = window.emailjs;
 
@@ -32,10 +33,8 @@ class Contact extends React.Component {
   render() {
     return (
       <ContactPageElm className='app contact'>
+        <Navbar />
         <h1>Contact</h1>
-        <Link to='/'>
-          <h2>Go To Home</h2>
-        </Link>
       </ContactPageElm>
     )
   }
