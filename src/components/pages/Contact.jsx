@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 import {EMAILJSUSER} from '../../apiKeys';
 import {Page} from '../../utils/styledClasses';
-import {loadContent} from '../../utils/functions';
+import {loadContent, unloadContent} from '../../utils/functions';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
 import './css/Contact.css';
@@ -40,23 +40,16 @@ class Contact extends React.Component {
 
   compoenntWillUnmount() {
     setInterval(() => {
-      this.unloadContent();
+      unloadContent('.contact_content');
     }, 500);
   }
 
-  // loadContent = () => {
+  // unloadContent = () => {
   //   const contactContent = document.querySelector('.contact_content');
   //   if (contactContent) {
-  //     contactContent.style.height = '605px';
+  //     contactContent.style.height = '0px';
   //   }
   // }
-
-  unloadContent = () => {
-    const contactContent = document.querySelector('.contact_content');
-    if (contactContent) {
-      contactContent.style.height = '0px';
-    }
-  }
 
   onFormChange = e => this.setState({[e.target.name]: e.target.value});
 
