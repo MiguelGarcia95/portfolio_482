@@ -37,7 +37,7 @@ class Contact extends React.Component {
   loadContent = () => {
     const contactContent = document.querySelector('.contact_content');
     if (contactContent) {
-      contactContent.style.height = '400px';
+      contactContent.style.height = '530px';
     }
   }
 
