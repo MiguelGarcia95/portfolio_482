@@ -62,6 +62,12 @@ class ShowWork extends React.Component {
       return fetchedProject;
     }, null)
   }
+  
+  displayTags = tags => {
+    return tags.map(tag => {
+      return <span key={tag}>{tag}</span>
+    })
+  }
 
   scrollDown = () => {
     this.pageDown.scrollIntoView({behavior: 'smooth'});
@@ -92,7 +98,7 @@ class ShowWork extends React.Component {
             </section>
 
             <section className="show_work_content">
-              <section className="show_work_tags"></section>
+              <section className="show_work_tags">{this.displayTags(project.tags)}</section>
               <section className="show_work_about">
                 <p>
                   Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Vulgtm sll'ha li'hee goka, naooboshu f'n'ghft ep 'ai goka Cthulhu f'geb orr'e, s'uhn grah'n vulgtm nnngeb cgnaiih uaaah vulgtm mg.
