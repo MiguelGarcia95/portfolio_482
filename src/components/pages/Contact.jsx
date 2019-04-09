@@ -55,7 +55,7 @@ class Contact extends React.Component {
     }
   }
 
-  onFormChange = e => this.setstate({[e.target.name]: e.target.value});
+  onFormChange = e => this.setState({[e.target.name]: e.target.value});
 
   sendMessage = () => {
     let emailParams  = {
