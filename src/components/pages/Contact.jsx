@@ -80,6 +80,7 @@ class Contact extends React.Component {
   }
 
   render() {
+    const {name, email, subject, message} = this.state;
     return (
       <ContactPageElm className='app contact'>
         <Navbar />
@@ -88,19 +89,19 @@ class Contact extends React.Component {
           <section className="contact_form">
             <section className="contact_form_section">
               <label htmlFor="name">Name</label>
-              <input type="text" name='name' onChange={this.onFormChange} />
+              <input type="text" name='name' onChange={this.onFormChange} value={name} />
             </section>
             <section className="contact_form_section">
               <label htmlFor="email">Email</label>
-              <input type="email" name='email' onChange={this.onFormChange} />
+              <input type="email" name='email' onChange={this.onFormChange} value={email} />
             </section>
             <section className="contact_form_section">
               <label htmlFor="subject">Subject</label>
-              <input type="text" name='subject' onChange={this.onFormChange} />
+              <input type="text" name='subject' onChange={this.onFormChange} value={subject} />
             </section>
             <section className="contact_form_section form_textarea">
               <label htmlFor="message">Message</label>
-              <textarea name="message" onChange={this.onFormChange} ></textarea>
+              <textarea name="message" onChange={this.onFormChange} value={message}></textarea>
             </section>
             <button onClick={() => this.sendMessage()}>Send</button>
           </section>
