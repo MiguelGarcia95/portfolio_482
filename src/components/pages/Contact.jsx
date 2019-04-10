@@ -9,6 +9,7 @@ import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
 import ContactInput from '../layout/ContactInput';
 import './css/Contact.css';
+import { error } from 'util';
 
 const emailjs = window.emailjs;
 
@@ -69,6 +70,7 @@ class Contact extends React.Component {
     if (!this.state.message) {
       errors.push({name: 'message', message: 'Enter a Message'})
     }
+    this.setState({errors: errors});
     return errors.length > 0 ? false : true;
   }
 
@@ -88,6 +90,7 @@ class Contact extends React.Component {
       })
   
       this.clearForm();
+      this.setState({errors: []});
     }
   }
 
@@ -110,19 +113,19 @@ class Contact extends React.Component {
           <section className="contact_form">
             <ContactInput 
               name='name' label='Name' value={name} type='text'
-              onFormChange={this.onFormChange} errors={this.fetchError(errors, 'name')} 
+              onFormChange={this.onFormChange} error={this.fetchError(errors, 'name')} 
             />
             <ContactInput 
               name='email' label='Email' value={email} type='email' 
-              onFormChange={this.onFormChange} errors={this.fetchError(errors, 'email')} 
+              onFormChange={this.onFormChange} error={this.fetchError(errors, 'email')} 
             />
             <ContactInput 
               name='subject' label='Subject' value={subject} type='text'
-              onFormChange={this.onFormChange} errors={this.fetchError(errors, 'subject')} 
+              onFormChange={this.onFormChange} error={this.fetchError(errors, 'subject')} 
             />
             <ContactInput 
               name='message' label='Message' value={message} type='textarea'
-              onFormChange={this.onFormChange} errors={this.fetchError(errors, 'message')} 
+              onFormChange={this.onFormChange} error={this.fetchError(errors, 'message')} 
             />
             <button onClick={() => this.sendMessage()}>Send</button>
           </section>
