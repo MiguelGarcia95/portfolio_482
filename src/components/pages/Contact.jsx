@@ -114,7 +114,7 @@ class Contact extends React.Component {
       <ContactPageElm className='app contact'>
         <Navbar />
         <section className="contact_content">
-          {messageSent && <h1>{messageSent}</h1>}
+          {messageSent && <h2 className='contact_notice'>{messageSent}</h2>}
 
           <h1 className='contact_title'>Contact</h1>
 
