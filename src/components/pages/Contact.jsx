@@ -121,15 +121,9 @@ class Contact extends React.Component {
               onFormChange={this.onFormChange} errors={this.fetchError(errors, 'subject')} 
             />
             <ContactInput 
-              name='message' label='Message' value={subject} type='textarea'
+              name='message' label='Message' value={message} type='textarea'
               onFormChange={this.onFormChange} errors={this.fetchError(errors, 'message')} 
             />
-
-            {/* <section className="contact_form_section form_textarea">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" onChange={this.onFormChange} value={message}></textarea>
-            </section> */}
-
             <button onClick={() => this.sendMessage()}>Send</button>
           </section>
         </section>
