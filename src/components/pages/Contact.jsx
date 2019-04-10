@@ -7,6 +7,7 @@ import {Page} from '../../utils/styledClasses';
 import {loadContent, unloadContent} from '../../utils/functions';
 import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
+import ContactInput from '../layout/ContactInput';
 import './css/Contact.css';
 
 const emailjs = window.emailjs;
@@ -98,18 +99,9 @@ class Contact extends React.Component {
         <section className="contact_content">
           <h1 className='contact_title'>Contact</h1>
           <section className="contact_form">
-            <section className="contact_form_section">
-              <label htmlFor="name">Name</label>
-              <input type="text" name='name' onChange={this.onFormChange} value={name} />
-            </section>
-            <section className="contact_form_section">
-              <label htmlFor="email">Email</label>
-              <input type="email" name='email' onChange={this.onFormChange} value={email} />
-            </section>
-            <section className="contact_form_section">
-              <label htmlFor="subject">Subject</label>
-              <input type="text" name='subject' onChange={this.onFormChange} value={subject} />
-            </section>
+            <ContactInput name='name' label='Name' onFormChange={this.onFormChange} value={name} />
+            <ContactInput name='email' label='Email' onFormChange={this.onFormChange} value={email} />
+            <ContactInput name='subject' label='Subject' onFormChange={this.onFormChange} value={subject} />
             <section className="contact_form_section form_textarea">
               <label htmlFor="message">Message</label>
               <textarea name="message" onChange={this.onFormChange} value={message}></textarea>
