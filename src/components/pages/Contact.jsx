@@ -99,9 +99,9 @@ class Contact extends React.Component {
         <section className="contact_content">
           <h1 className='contact_title'>Contact</h1>
           <section className="contact_form">
-            <ContactInput name='name' label='Name' onFormChange={this.onFormChange} value={name} />
-            <ContactInput name='email' label='Email' onFormChange={this.onFormChange} value={email} />
-            <ContactInput name='subject' label='Subject' onFormChange={this.onFormChange} value={subject} />
+            <ContactInput name='name' label='Name' onFormChange={this.onFormChange} value={name} type='text' />
+            <ContactInput name='email' label='Email' onFormChange={this.onFormChange} value={email} type='email' />
+            <ContactInput name='subject' label='Subject' onFormChange={this.onFormChange} value={subject} type='text'/>
             <section className="contact_form_section form_textarea">
               <label htmlFor="message">Message</label>
               <textarea name="message" onChange={this.onFormChange} value={message}></textarea>
