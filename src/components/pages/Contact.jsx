@@ -29,6 +29,7 @@ class Contact extends React.Component {
     message: '',
     subject: '',
     errors: [],
+    messageSent: '',
     attachment: null
   }
 
@@ -52,8 +53,13 @@ class Contact extends React.Component {
       name: '',
       email: '',
       message: '',
-      subject: ''
-    })
+      subject: '',
+      errors: []
+    });
+
+    setInterval(() => {
+      this.setState({messageSent: ''});
+    }, 10000);
   }
 
   validateForm = () => {
@@ -76,6 +82,8 @@ class Contact extends React.Component {
 
   sendMessage = () => {
     if (this.validateForm()) {
+      let senderName = this.state.name;
+
       let emailParams  = {
         from_name: `${this.state.name} (${this.state.email})`,
         to_name: 'mgarcia95951@gmail.com',
@@ -83,14 +91,11 @@ class Contact extends React.Component {
         message_html: this.state.message
       }
   
-      emailjs.send('sendgrid', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(response => {
-        console.log('message send ', response.status, response.text)
-      }, err => {
-        console.log(err);
-      })
+      emailjs.send('sendgrid', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(() => {
+        this.setState({messageSent: `Message sent by ${senderName}`});
+      });
   
       this.clearForm();
-      this.setState({errors: []});
     }
   }
 
@@ -104,12 +109,15 @@ class Contact extends React.Component {
   }
 
   render() {
-    const {name, email, subject, message, errors} = this.state;
+    const {name, email, subject, message, errors, messageSent} = this.state;
     return (
       <ContactPageElm className='app contact'>
         <Navbar />
         <section className="contact_content">
+          {messageSent && <h1>{messageSent}</h1>}
+
           <h1 className='contact_title'>Contact</h1>
+
           <section className="contact_form">
             <ContactInput 
               name='name' label='Name' value={name} type='text'
