@@ -120,10 +120,16 @@ class Contact extends React.Component {
               name='subject' label='Subject' value={subject} type='text'
               onFormChange={this.onFormChange} errors={this.fetchError(errors, 'subject')} 
             />
-            <section className="contact_form_section form_textarea">
+            <ContactInput 
+              name='message' label='Message' value={subject} type='textarea'
+              onFormChange={this.onFormChange} errors={this.fetchError(errors, 'message')} 
+            />
+
+            {/* <section className="contact_form_section form_textarea">
               <label htmlFor="message">Message</label>
               <textarea name="message" onChange={this.onFormChange} value={message}></textarea>
-            </section>
+            </section> */}
+
             <button onClick={() => this.sendMessage()}>Send</button>
           </section>
         </section>
