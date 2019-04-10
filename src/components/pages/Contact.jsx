@@ -91,6 +91,15 @@ class Contact extends React.Component {
     }
   }
 
+  fetchError = (errors, name) => {
+    return errors.reduce((selectedError, error) => {
+      if (error.name === name) {
+        selectedError = error.message
+      }
+      return selectedError;
+    }, null);
+  }
+
   render() {
     const {name, email, subject, message} = this.state;
     return (
