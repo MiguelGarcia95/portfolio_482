@@ -68,23 +68,26 @@ class Contact extends React.Component {
     if (!this.state.message) {
       errors.push({name: 'message', message: 'Enter a Message'})
     }
+    return errors.length > 0 ? false : true;
   }
 
   sendMessage = () => {
-    let emailParams  = {
-      from_name: `${this.state.name} (${this.state.email})`,
-      to_name: 'mgarcia95951@gmail.com',
-      subject: this.state.subject,
-      message_html: this.state.message
+    if (this.validateForm()) {
+      let emailParams  = {
+        from_name: `${this.state.name} (${this.state.email})`,
+        to_name: 'mgarcia95951@gmail.com',
+        subject: this.state.subject,
+        message_html: this.state.message
+      }
+  
+      emailjs.send('sendgrid', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(response => {
+        console.log('message send ', response.status, response.text)
+      }, err => {
+        console.log(err);
+      })
+  
+      this.clearForm();
     }
-
-    emailjs.send('sendgrid', 'template_Q7oo4Aah', emailParams, EMAILJSUSER).then(response => {
-      console.log('message send ', response.status, response.text)
-    }, err => {
-      console.log(err);
-    })
-
-    this.clearForm();
   }
 
   render() {
