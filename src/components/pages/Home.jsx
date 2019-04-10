@@ -27,7 +27,6 @@ const Home = () => {
         </section>
         <section className="home_button">
           <Link to='/work'>
-            {/* Work */}
             <i className="fas fa-long-arrow-alt-right fa-2x"></i>
           </Link>
         </section>
