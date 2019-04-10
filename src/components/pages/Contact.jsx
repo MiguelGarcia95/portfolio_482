@@ -45,6 +45,31 @@ class Contact extends React.Component {
 
   onFormChange = e => this.setState({[e.target.name]: e.target.value});
 
+  clearForm = () => {
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+      subject: ''
+    })
+  }
+
+  validateForm = () => {
+    let errors = [];
+    if (!this.state.email) {
+      errors.push({name: 'email', message: 'Enter an Email'})
+    }
+    if (!this.state.name) {
+      errors.push({name: 'name', message: 'Enter A Name'})
+    }
+    if (!this.state.subject) {
+      errors.push({name: 'subject', message: 'Enter a Subject'})
+    }
+    if (!this.state.message) {
+      errors.push({name: 'message', message: 'Enter a Message'})
+    }
+  }
+
   sendMessage = () => {
     let emailParams  = {
       from_name: `${this.state.name} (${this.state.email})`,
@@ -59,12 +84,7 @@ class Contact extends React.Component {
       console.log(err);
     })
 
-    this.setState({
-      name: '',
-      email: '',
-      message: '',
-      subject: ''
-    })
+    this.clearForm();
   }
 
   render() {
