@@ -5,6 +5,7 @@ import styled, { keyframes } from "styled-components";
 import {Page} from '../../utils/styledClasses';
 import {slideInLeft, slideOutLeft} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
+import './css/Home.css';
 
 const HomePageElm = styled(Page)`
   &.page-enter {
@@ -19,7 +20,9 @@ const Home = () => {
   return (
     <HomePageElm className='app home'>
       <Navbar />
-      <h1>Home</h1>
+      <section className="home_container">
+      
+      </section>
     </HomePageElm>
   )
 }

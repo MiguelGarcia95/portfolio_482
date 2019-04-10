@@ -9,7 +9,6 @@ import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
 import ContactInput from '../layout/ContactInput';
 import './css/Contact.css';
-import { error } from 'util';
 
 const emailjs = window.emailjs;
 
