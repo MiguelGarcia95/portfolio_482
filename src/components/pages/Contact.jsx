@@ -59,7 +59,7 @@ class Contact extends React.Component {
 
     setInterval(() => {
       this.setState({messageSent: ''});
-    }, 10000);
+    }, 5000);
   }
 
   validateForm = () => {
