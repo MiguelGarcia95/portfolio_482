@@ -21,7 +21,12 @@ const Home = () => {
     <HomePageElm className='app home'>
       <Navbar />
       <section className="home_container">
-      
+        <section className="home_header">
+          <h1>Miguel Garcia</h1>
+        </section>
+        <section className="home_button">
+          <Link to='/work'>Work</Link>
+        </section>
       </section>
     </HomePageElm>
   )
