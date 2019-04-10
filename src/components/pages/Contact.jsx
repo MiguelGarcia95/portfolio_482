@@ -35,7 +35,7 @@ class Contact extends React.Component {
   componentDidMount() {
     emailjs.init(EMAILJSUSER);
     setInterval(() => {
-      loadContent('.contact_content', '675px');
+      loadContent('.contact_content', '680px');
     }, 500);
   }
 
