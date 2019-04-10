@@ -26,7 +26,10 @@ const Home = () => {
           <h1>Miguel Garcia</h1>
         </section>
         <section className="home_button">
-          <Link to='/work'>Work</Link>
+          <Link to='/work'>
+            {/* Work */}
+            <i className="fas fa-long-arrow-alt-right fa-2x"></i>
+          </Link>
         </section>
       </section>
     </HomePageElm>
