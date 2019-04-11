@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectSlider from './ProjectSlider';
 
 const WorkSlider = ({project}) => {
   return (

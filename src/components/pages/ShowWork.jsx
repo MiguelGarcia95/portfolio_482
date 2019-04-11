@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import {projects} from '../../utils/projectsData';
 import {Page} from '../../utils/styledClasses';
 import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
-import ProjectSlider from '../layout/ProjectSlider';
+import WorkSlider from '../layout/WorkSlider';
 import Navbar from '../layout/Navbar';
 import './css/ShowWork.css';
 
@@ -80,13 +80,8 @@ class ShowWork extends React.Component {
         <Navbar />
         {project && (
           <React.Fragment>
-            <section className="show_work_display">
-              <section className="show_work_display_header">
-                <h1 className="show_work_name">{project.name}</h1>
-                <a href="linkhere.com" className="show_work_link">Visit Page</a>
-              </section>
-              <ProjectSlider images={project.images} />
-            </section>
+            <WorkSlider project={project} />
+
             <Link className='show_work_back' id="chevron-arrow-left" to='/work'></Link>
             <section className="scroll_down">
               <h2>Scroll Down</h2>
