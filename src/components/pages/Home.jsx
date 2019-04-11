@@ -48,8 +48,6 @@ class Home extends React.Component {
               <p>
                 I’m Miguel, a Web Developer with an ever growing passion for frontend development, 
                 and some interest in backend technologies. I also enjoy character design on the side as a hobby.
-                Web Apps are the future after all. 
-                Preferred web technologies to work with include:
               </p>
             </section>
             <section className="home_content_2">
