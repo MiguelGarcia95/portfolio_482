@@ -65,7 +65,7 @@ class ShowWork extends React.Component {
   
   displayTags = tags => {
     return tags.map(tag => {
-      return <span key={tag}>{tag}</span>
+      return <span className='tag' key={tag}>{tag}</span>
     })
   }
 
@@ -102,7 +102,7 @@ class ShowWork extends React.Component {
                 <Link className='show_work_contact' to='/contact'>Contact</Link>            
               </section>
             </section>
-            
+
           </React.Fragment>
         )}
       </ShowWorkPageElm>
