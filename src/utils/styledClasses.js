@@ -23,7 +23,6 @@ export const Page = styled.div`
     font-size: 1rem;
     max-width: 400px;
     margin: 20px auto;
-    color: #37474f;
   }
 `;
 
@@ -51,6 +50,5 @@ export const OverflowPage = styled.div`
     font-size: 1rem;
     max-width: 400px;
     margin: 20px auto;
-    color: #37474f;
   }
 `;

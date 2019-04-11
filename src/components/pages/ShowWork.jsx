@@ -40,7 +40,7 @@ const ShowWorkPageElm = styled(Page)`
     animation: ${slideInTop} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.7s ease forwards;
+    animation: ${slideOutBottom} 0.4s ease forwards;
   }
 `;
 
