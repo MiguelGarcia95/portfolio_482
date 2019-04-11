@@ -92,10 +92,21 @@ class ShowWork extends React.Component {
               <div ref={node => this.pageDown = node}></div>
               <section className="show_work_tags">{this.displayTags(project.tags)}</section>
               <section className="show_work_about">
+                <h2>About Project</h2>
                 <p>
                   Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Vulgtm sll'ha li'hee goka, naooboshu f'n'ghft ep 'ai goka Cthulhu f'geb orr'e, s'uhn grah'n vulgtm nnngeb cgnaiih uaaah vulgtm mg.
                   Ee shugg Shub-Niggurath k'yarnak wgah'n lloig syha'h hafh'drn, sgn'wahlog lloig phlegeth wgah'n syha'h 'ai, r'luh lloigor lw'nafh stell'bsna ep vulgtmagl. Goka y'hah h'throd 'bthnk naehye hlirgh gotha lloignyth h'nog syha'h s'uhn, ftaghu nw tharanak Yoggoth orr'e h'uln n'gha kadishtu nnnsyha'h, nglw'nafh Tsathoggua hupadgh ah ron fm'latgh hlirgh s'uhnyar lw'nafh. Nw naflAzathoth ya lw'nafhnyth y-tharanak naNyarlathotep, syha'h li'hee h'Tsathoggua fhtagn ehye f'mg, sll'ha nnnHastur ah ep.
                 </p>
+              </section>
+              <section className="show_work_details">
+                <h2>Tech/Tools Used</h2>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS3 - LESS</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Firestore & Firebase</li>
+                </ul>
               </section>
               <section className="show_work_more">
                 <a href="linkhere.com" className="show_work_contact_link">Visit Page</a>
