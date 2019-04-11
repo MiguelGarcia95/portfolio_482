@@ -30,16 +30,6 @@ class Home extends React.Component {
     }, 500);
   }
 
-//   Hey! 
-
-//     CSS
-//     Javascript (ReactJS)
-//     any Javascript animation library (GSAP, and Three.JS in particular),
-//     PHP (Laravel)
-//     Wordpress (seeing what some plugins do is something else).
-
-// Personal hobbies include reading, art/design, video games, and occasionally lurk blogs and forums.
-
   render() {
     return (
       <HomePageElm className='app home'>
@@ -64,10 +54,7 @@ class Home extends React.Component {
             </section>
             <section className="home_content_2">
               <p>
-                I’m Miguel, a Web Developer with an ever growing passion for frontend development, 
-                and some interest in backend technologies. I also enjoy character design on the side as a hobby.
-                Web Apps are the future after all. 
-                Preferred web technologies to work with include:
+                Personal hobbies include reading, art/design, video games, and occasionally lurk blogs and forums.
               </p>
             </section>
           </section>
