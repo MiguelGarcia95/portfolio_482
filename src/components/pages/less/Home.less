@@ -5,7 +5,8 @@
   // max-width: 100%;
   // min-height: 100vh;
   .home_container {
-    position: relative;
+    // position: relative;
+    position: static;
     width: 90%;
     // height: 90vh;
     transition: height 0.5s;
@@ -56,9 +57,24 @@
     .home_content {
       width: 40vh;
       position: absolute;
-      bottom: 0; right: 0;
+      // bottom: 0; right: 0;
+      bottom: 5vh; right: 5vw;
       border-right: 2px solid white;
       border-top: 2px solid white;
+      p {
+        width: 100%;
+        color: white;
+      }
+    }
+    .home_content_2 {
+      width: 40vh;
+      position: absolute;
+      // top: -2px; left: -2px;
+      top: 5vh; left: 5vw;
+      border-top: 2px solid #232323;
+      border-left: 2px solid #232323;
+      border-bottom: 2px solid white;
+      border-right: 2px solid white;
       p {
         width: 100%;
         color: white;
