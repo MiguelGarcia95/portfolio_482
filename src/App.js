@@ -12,8 +12,7 @@ const PageContainer = styled.div`
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #e3f2fd;
-  font-family: "Open Sans", sans-serif;
+  background-color: #232323;
 `;
 
 const App = () => {
