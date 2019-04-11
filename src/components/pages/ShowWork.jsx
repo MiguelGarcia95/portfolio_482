@@ -81,18 +81,15 @@ class ShowWork extends React.Component {
         {project && (
           <React.Fragment>
             <WorkSlider project={project} />
-
             <Link className='show_work_back' id="chevron-arrow-left" to='/work'></Link>
+
             <section className="scroll_down">
               <h2>Scroll Down</h2>
               <section id="chevron-arrow-down" onClick={() => this.scrollDown()}></section>
             </section>
 
-            <section style={{height: '1600px', width: '100%', background: 'red'}}>
-              <div ref={node => this.pageDown = node}></div>
-            </section>
-
             <section className="show_work_content">
+              <div ref={node => this.pageDown = node}></div>
               <section className="show_work_tags">{this.displayTags(project.tags)}</section>
               <section className="show_work_about">
                 <p>
@@ -105,6 +102,7 @@ class ShowWork extends React.Component {
                 <Link className='show_work_contact' to='/contact'>Contact</Link>            
               </section>
             </section>
+            
           </React.Fragment>
         )}
       </ShowWorkPageElm>
