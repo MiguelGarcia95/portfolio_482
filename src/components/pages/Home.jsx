@@ -54,6 +54,9 @@ class Home extends React.Component {
               <i className="fas fa-long-arrow-alt-right fa-2x"></i>
             </Link>
           </section>
+          <section className="home_content">
+            
+          </section>
         </section>
       </HomePageElm>
     )
