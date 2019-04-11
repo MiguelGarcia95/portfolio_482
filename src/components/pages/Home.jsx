@@ -10,10 +10,10 @@ import './css/Home.css';
 
 const HomePageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInLeft} 0.5s ease forwards;
+    animation: ${slideInLeft} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutLeft} 0.5s ease forwards;
+    animation: ${slideOutLeft} 0.7s ease forwards;
   }
 `;
 
@@ -21,7 +21,7 @@ class Home extends React.Component {
   componentDidMount() {
     setInterval(() => {
       loadContent('.home_container', '90vh');
-    }, 500);
+    }, 700);
   }
 
   compoenntWillUnmount() {

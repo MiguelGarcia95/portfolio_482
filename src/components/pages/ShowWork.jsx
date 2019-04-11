@@ -37,10 +37,10 @@ export const fadeOut = keyframes`
 
 const ShowWorkPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInTop} 0.5s ease forwards;
+    animation: ${slideInTop} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.5s ease forwards;
+    animation: ${slideOutBottom} 0.7s ease forwards;
   }
 `;
 

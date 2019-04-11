@@ -13,10 +13,10 @@ import './css/Work.css';
 
 const WorkPageElm = styled(OverflowPage)`
   &.page-enter {
-    animation: ${slideInTop} 0.5s ease forwards;
+    animation: ${slideInTop} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.5s ease forwards;
+    animation: ${slideOutBottom} 0.7s ease forwards;
   }
 `;
 
@@ -24,7 +24,7 @@ class Work extends React.Component {
   componentDidMount() {
     setInterval(() => {
       loadContent('.work_content', this.getContentHeight());
-    }, 500)
+    }, 700)
   }
 
   getContentHeight = () => {

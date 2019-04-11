@@ -14,10 +14,10 @@ const emailjs = window.emailjs;
 
 const ContactPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInRight} 0.5s ease forwards;
+    animation: ${slideInRight} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutRight} 0.5s ease forwards;
+    animation: ${slideOutRight} 0.7s ease forwards;
   }
 `;
 
