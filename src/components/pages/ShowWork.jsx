@@ -11,36 +11,36 @@ import ProjectSlider from '../layout/ProjectSlider';
 import Navbar from '../layout/Navbar';
 import './css/ShowWork.css';
 
-export const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    visibility: visible;
-  }
+// const fadeIn = keyframes`
+//   from {
+//     opacity: 0;
+//     visibility: visible;
+//   }
 
-  to {
-    opacity: 1;
-    visibility: visible;
-  }
-`;
+//   to {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// `;
 
-export const fadeOut = keyframes`
-  from {
-    opacity: 1;
-    visibility: visible;
-  }
+// const fadeOut = keyframes`
+//   from {
+//     opacity: 1;
+//     visibility: visible;
+//   }
 
-  to {
-    opacity: 0;
-    visibility: visible;
-  }
-`;
+//   to {
+//     opacity: 0;
+//     visibility: visible;
+//   }
+// `;
 
 const ShowWorkPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInTop} 0.7s ease forwards;
+    animation: ${slideInTop} 0.5s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.4s ease forwards;
+    animation: ${slideOutBottom} 0.5s ease forwards;
   }
 `;
 
