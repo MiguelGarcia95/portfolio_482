@@ -199,6 +199,9 @@
         .show_work_name {
           font-size: 1.5em;
         }
+      }    
+      .project_slider {
+        top: 50px;
       }
     }
 
@@ -228,8 +231,9 @@
 @media (max-width: 650px) {
   .show_work {
     .show_work_display {
+      width: 100%; max-width: 100%;
       .show_work_display_header {
-        width: 80vw; max-width: 80%;
+        // width: 80vw; max-width: 80%;
         .show_work_link {
           font-size: 0.9em; 
           // line-height: 30px;
@@ -244,17 +248,15 @@
         }
       }    
       .project_slider {
-        // width: 100%; 
-        height: 80vh;
-        // top: 0; bottom: 0;
+        box-sizing: border-box;
+        padding: 0px 50px;
+        width: 100%; max-width: 100%;
+        height: auto;
+        top: 80px;
         .project_slider_slider {
-          width: 80vw; max-width: 80%;
-          height: 80vh;
-          margin-left: 9vw;
-          .project_image_slide {
-            // width: 100%; 
-            // height: 70vh;
-          } 
+          width: 100%; max-width: 100%;
+          margin-left: 0;
+          height: auto;
         }
       }
     }
