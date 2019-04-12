@@ -21,7 +21,6 @@ export const Page = styled.div`
   }
   p {
     font-size: 1rem;
-    max-width: 400px;
     margin: 20px auto;
   }
 `;
@@ -48,7 +47,6 @@ export const OverflowPage = styled.div`
   }
   p {
     font-size: 1rem;
-    max-width: 400px;
     margin: 20px auto;
   }
 `;
