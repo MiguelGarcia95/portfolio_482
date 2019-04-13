@@ -1,5 +1,11 @@
 //out: ../css/Work.css, sourcemap: false, compress: true
 
+.work_title {
+  position: absolute;
+  top: 20px;
+  font-size: 2.5em;
+}
+
 .work_content {
   position: absolute;
   top: 100px; 
@@ -108,6 +114,10 @@
 }
 
 @media (max-width: 700px) {
+  .work_title {
+    top: 30px;
+    font-size: 1.8em;
+  }
   .work_content {
     width: 300px;
     .work_item {
@@ -124,6 +134,10 @@
 
 
 @media (max-width: 450px) {
+  .work_title {
+    top: 35px;
+    font-size: 1.5em;
+  }
   .work_content {
     width: 200px;
     .work_item {
