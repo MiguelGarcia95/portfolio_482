@@ -16,7 +16,7 @@ export const projects = [
       'anime', 'gaming', 'random', 'anime', 'gaming', 'random', 'anime', 'gaming', 'random'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Firestore'
+      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'TMDB API', 'Photoshop'
     ]
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
       'anime', 'gaming', 'random', 'anime', 'gaming', 'random', 'anime', 'gaming', 'random'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Firestore'
+      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Firestore', 'Firebase'
     ]
   },
   {
@@ -56,7 +56,7 @@ export const projects = [
       'anime', 'gaming', 'random', 'anime', 'gaming', 'random', 'anime', 'gaming', 'random'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Firestore'
+      'HTML', 'CSS3 - LESS', 'Wordpress'
     ]
   },
   {
@@ -76,7 +76,7 @@ export const projects = [
       'anime', 'gaming', 'random', 'anime', 'gaming', 'random', 'anime', 'gaming', 'random'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Firestore'
+      'HTML', 'CSS3 - LESS', 'React', 'Photoshop'
     ]
   },
   {
@@ -97,7 +97,7 @@ export const projects = [
       'anime', 'gaming', 'random', 'anime', 'gaming', 'random', 'anime', 'gaming', 'random'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Firestore'
+      'HTML', 'CSS3 - LESS', 'React', 'Photoshop'
     ]
   }
 ]

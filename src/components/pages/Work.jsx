@@ -42,7 +42,7 @@ class Work extends React.Component {
       <WorkPageElm className='app work'>
         <Navbar />
         <section className="work_title">
-          <h1>Work</h1>
+          <h1 className='noselect' >Work</h1>
         </section>
         <section className='work_content' >
           {this.displayWork(projects)}
