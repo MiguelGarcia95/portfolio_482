@@ -45,6 +45,12 @@ class ShowWork extends React.Component {
     })
   }
 
+  displayTechUsed = list => {
+    return list.map(item => {
+      return <li key={item}>{item}</li>
+    })
+  }
+
   scrollDown = () => {
     this.pageDown.scrollIntoView({behavior: 'smooth'});
   }
