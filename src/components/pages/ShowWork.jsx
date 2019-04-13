@@ -6,35 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import {projects} from '../../utils/projectsData';
 import {Page} from '../../utils/styledClasses';
-// import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
 import {slideInLeft, slideOutRight} from '../../utils/styledTransitions';
 import WorkSlider from '../layout/WorkSlider';
 import Navbar from '../layout/Navbar';
 import './css/ShowWork.css';
-
-// const fadeIn = keyframes`
-//   from {
-//     opacity: 0;
-//     visibility: visible;
-//   }
-
-//   to {
-//     opacity: 1;
-//     visibility: visible;
-//   }
-// `;
-
-// const fadeOut = keyframes`
-//   from {
-//     opacity: 1;
-//     visibility: visible;
-//   }
-
-//   to {
-//     opacity: 0;
-//     visibility: visible;
-//   }
-// `;
 
 const ShowWorkPageElm = styled(Page)`
   &.page-enter {
