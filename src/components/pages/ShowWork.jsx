@@ -83,11 +83,7 @@ class ShowWork extends React.Component {
               <section className="show_work_details">
                 <h2>Tech/Tools Used</h2>
                 <ul>
-                  <li>HTML</li>
-                  <li>CSS3 - LESS</li>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Firestore & Firebase</li>
+                  {this.displayTechUsed(project.technology)}
                 </ul>
               </section>
               <section className="show_work_more">
