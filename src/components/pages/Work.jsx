@@ -7,16 +7,17 @@ import WorkItem from '../layout/WorkItem';
 import Navbar from '../layout/Navbar';
 import {Page, OverflowPage} from '../../utils/styledClasses';
 import {loadContent, unloadContent} from '../../utils/functions';
-import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
+// import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
+import {slideInLeft, slideOutRight} from '../../utils/styledTransitions';
 import './css/Work.css';
 
 
 const WorkPageElm = styled(OverflowPage)`
   &.page-enter {
-    animation: ${slideInTop} 0.7s ease forwards;
+    animation: ${slideInLeft} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.7s ease forwards;
+    animation: ${slideOutRight} 0.7s ease forwards;
   }
 `;
 

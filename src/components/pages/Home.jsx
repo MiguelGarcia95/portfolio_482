@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import {Page} from '../../utils/styledClasses';
 import {loadContent, unloadContent} from '../../utils/functions';
-import {slideInLeft, slideOutLeft} from '../../utils/styledTransitions';
+import {slideInLeft, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
 import './css/Home.css';
 
@@ -13,7 +13,7 @@ const HomePageElm = styled(Page)`
     animation: ${slideInLeft} 0.7s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutLeft} 0.7s ease forwards;
+    animation: ${slideOutRight} 0.7s ease forwards;
   }
 `;
 

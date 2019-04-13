@@ -6,7 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 import {projects} from '../../utils/projectsData';
 import {Page} from '../../utils/styledClasses';
-import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
+// import {slideInTop, slideOutBottom} from '../../utils/styledTransitions';
+import {slideInLeft, slideOutRight} from '../../utils/styledTransitions';
 import WorkSlider from '../layout/WorkSlider';
 import Navbar from '../layout/Navbar';
 import './css/ShowWork.css';
@@ -37,10 +38,10 @@ import './css/ShowWork.css';
 
 const ShowWorkPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInTop} 0.5s ease forwards;
+    animation: ${slideInLeft} 0.5s ease forwards;
   }
   &.page-exit {
-    animation: ${slideOutBottom} 0.5s ease forwards;
+    animation: ${slideOutRight} 0.5s ease forwards;
   }
 `;
 

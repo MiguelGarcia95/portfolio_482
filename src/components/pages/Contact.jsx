@@ -5,7 +5,7 @@ import styled from "styled-components";
 import {EMAILJSUSER} from '../../apiKeys';
 import {Page} from '../../utils/styledClasses';
 import {loadContent, unloadContent} from '../../utils/functions';
-import {slideInRight, slideOutRight} from '../../utils/styledTransitions';
+import {slideInLeft, slideOutRight} from '../../utils/styledTransitions';
 import Navbar from '../layout/Navbar';
 import ContactInput from '../layout/ContactInput';
 import './css/Contact.css';
@@ -14,7 +14,7 @@ const emailjs = window.emailjs;
 
 const ContactPageElm = styled(Page)`
   &.page-enter {
-    animation: ${slideInRight} 0.7s ease forwards;
+    animation: ${slideInLeft} 0.7s ease forwards;
   }
   &.page-exit {
     animation: ${slideOutRight} 0.7s ease forwards;
