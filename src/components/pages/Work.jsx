@@ -1,13 +1,11 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 import {projects} from '../../utils/projectsData';
 import WorkItem from '../layout/WorkItem';
 import Navbar from '../layout/Navbar';
-import {Page, OverflowPage} from '../../utils/styledClasses';
+import {OverflowPage} from '../../utils/styledClasses';
 import {loadContent, unloadContent} from '../../utils/functions';
-// import {slideInRight, slideOutRight, slideOutBottom, slideInTop} from '../../utils/styledTransitions';
 import {slideInLeft, slideOutRight} from '../../utils/styledTransitions';
 import './css/Work.css';
 
