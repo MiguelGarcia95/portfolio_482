@@ -89,8 +89,8 @@ class ShowWork extends React.Component {
             </section>
 
             <section className="show_work_content">
-              <div ref={node => this.pageDown = node}></div>
               <section className="show_work_tags">{this.displayTags(project.tags)}</section>
+              <div ref={node => this.pageDown = node}></div>
               <section className="show_work_about">
                 <h2>About Project</h2>
                 <p>
