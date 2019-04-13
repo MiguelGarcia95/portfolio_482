@@ -1,6 +1,7 @@
 export const projects = [
   {
-    name: 'testing-data',
+    name: 'Movie Searchbase',
+    url: 'https://movie-searchbase.firebaseapp.com/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
@@ -16,7 +17,8 @@ export const projects = [
     ]
   },
   {
-    name: 'testing-data2',
+    name: 'Orbit Chat',
+    url: 'https://orbit-chat-v2.firebaseapp.com/app',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
@@ -32,7 +34,8 @@ export const projects = [
     ]
   },
   {
-    name: 'testing-data3',
+    name: 'Triple C Roofing',
+    url: 'https://www.triplecroofing.com/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
@@ -48,7 +51,8 @@ export const projects = [
     ]
   },
   {
-    name: 'testing-data4',
+    name: 'Coffee Shop',
+    url: 'https://miguelgarcia95.github.io/coffee-place/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
