@@ -53,7 +53,7 @@ export const projects = [
   {
     name: 'Coffee Shop',
     url: 'https://miguelgarcia95.github.io/coffee-place/',
-    previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
+    previewImage: '/images/previews/coffee.png',
     images: [
       '/images/projects/coffee_01.png',
       '/images/projects/coffee_02.png',
