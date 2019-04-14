@@ -36,7 +36,7 @@ export const projects = [
   {
     name: 'Triple C Roofing',
     url: 'https://www.triplecroofing.com/',
-    previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
+    previewImage: '/images/previews/tcr.png',
     images: [
       '/images/projects/tcr1.png',
       '/images/projects/tcr2.png',
