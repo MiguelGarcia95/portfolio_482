@@ -70,7 +70,7 @@ export const projects = [
   {
     name: 'Pokedex React App',
     url: 'https://miguelgarcia95.github.io/PokedexApp/',
-    previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
+    previewImage: '/images/previews/pkmn.png',
     images: [
       '/images/projects/pk1.png'
     ],
