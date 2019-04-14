@@ -19,7 +19,7 @@ export const projects = [
   {
     name: 'Orbit Chat',
     url: 'https://orbit-chat-v2.firebaseapp.com/app',
-    previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
+    previewImage: '/images/previews/chat.png',
     images: [
       '/images/projects/chat_01.png',
       '/images/projects/chat_02.png',
