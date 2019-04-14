@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const WorkItem = ({project, unloadContent}) => {
   let imageStyle = {
-    backgroundImage: `url(${project.imageUrl})`,
+    backgroundImage: `url(${project.previewImage})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'
