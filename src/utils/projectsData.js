@@ -25,7 +25,7 @@ export const projects = [
       '/images/projects/chat_02.png',
       '/images/projects/chat_03.png'
     ],
-    details: "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. S'uhn kadishtuyar Tsathoggua, y-hupadgh syha'hor f'sll'ha throd ch' li'hee nglui, stell'bsna vulgtlagln ilyaa Nyarlathotep zhro shagg 'aiog. Gotha nog gof'nn ah ya Dagon 'ai f'ron n'gha ch' orr'e f'gof'nn, hlirghog y'hah ngluioth gothaagl R'lyeh lw'nafh athg Azathothog ftaghu mnahn' vulgtlagln, Azathoth shagg n'gha uln kn'a li'hee athgyar naHastur nilgh'ri ngYoggoth. Azathoth r'luh shtunggli phlegeth hrii y'hah bug nog, bug geb gof'nn Azathoth gof'nn nnnDagon vulgtlagln, h'orr'e tharanakyar 'ai zhro k'yarnak Dagon. Sgn'wahl gnaiih ep phlegeth wgah'n uh'e Yoggothnyth lloigoth, fm'latgh cy'hah mnahn' ngzhro f'k'yarnak lloig, nafm'latgh 'ai tharanak f'Dagon Tsathoggua shtunggli. ",
+    details: "A chat application that was based on both Slack and Discord. It's still an ongoing project that I will keep updating, or rebuilding as time goes on for both fun and practice. Next goal is create a mobile version of it using React Native.",
     tags: [
       'Web Development', 'Web App', 'React', 'Redux', 'Social Media', 'Chatroom'
     ],
