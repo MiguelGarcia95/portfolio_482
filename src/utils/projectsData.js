@@ -2,7 +2,7 @@ export const projects = [
   {
     name: 'Movie Searchbase',
     url: 'https://movie-searchbase.firebaseapp.com/',
-    previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
+    previewImage: '/images/previews/movie.png',
     images: [
       '/images/projects/movie_01.png',
       '/images/projects/movie_02.png',
