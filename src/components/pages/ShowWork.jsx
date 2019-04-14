@@ -84,7 +84,7 @@ class ShowWork extends React.Component {
                 </ul>
               </section>
               <section className="show_work_more">
-                <a href={project.url} className="show_work_contact_link">Visit Page</a>
+                <a target="_blank"  href={project.url} className="show_work_contact_link">Visit Page</a>
                 <Link className='show_work_contact' to='/contact'>Contact</Link>            
               </section>
             </section>
