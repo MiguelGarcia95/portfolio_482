@@ -3,7 +3,6 @@ export const projects = [
     name: 'Movie Searchbase',
     url: 'https://movie-searchbase.firebaseapp.com/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
       '/images/projects/movie_01.png',
       '/images/projects/movie_02.png',
@@ -21,7 +20,6 @@ export const projects = [
     name: 'Orbit Chat',
     url: 'https://orbit-chat-v2.firebaseapp.com/app',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
       '/images/projects/chat_01.png',
       '/images/projects/chat_02.png',
@@ -39,7 +37,6 @@ export const projects = [
     name: 'Triple C Roofing',
     url: 'https://www.triplecroofing.com/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
       '/images/projects/tcr1.png',
       '/images/projects/tcr2.png',
@@ -57,7 +54,6 @@ export const projects = [
     name: 'Coffee Shop',
     url: 'https://miguelgarcia95.github.io/coffee-place/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
       '/images/projects/coffee_01.png',
       '/images/projects/coffee_02.png',
@@ -75,7 +71,6 @@ export const projects = [
     name: 'Pokedex React App',
     url: 'https://miguelgarcia95.github.io/PokedexApp/',
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-    imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
       '/images/projects/pk1.png'
     ],
