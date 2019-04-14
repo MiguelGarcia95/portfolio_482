@@ -41,10 +41,9 @@ export const projects = [
     previewImage: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     imageUrl: 'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
     images: [
-      'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-      'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-      'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png',
-      'https://docs.microsoft.com/en-us/sharepoint/dev/images/design-placeholders-and-fallbacks.png'
+      '/images/projects/tcr1.png',
+      '/images/projects/tcr2.png',
+      '/images/projects/tcr3.png'
     ],
     details: "A Wordpress website made for a local roofing company. The client wanted his website rebuilt since he wasn't satisfied with his initial website. I made the design, and after approval made the website using Wordpress and the Elementor plugin.",
     tags: [
