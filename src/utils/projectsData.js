@@ -90,7 +90,7 @@ export const projects = [
     details: "I recently started playing one of the newer games, and got the idea to make an online Pokedex for personal use. Once I found out there was a Pokemon API, I got started on building this Pokedex application. It was built using ReactJS, and the PokeAPI Api. It was also good practice on advanced CSS selectors.",
     details2: "For the design, I used the first generation Kanto Pokedex design from the Pokemon anime.",
     tags: [
-      'anime', 'gaming', 'random', 'anime', 'gaming', 'random', 'anime', 'gaming', 'random'
+      'Web Development', 'Web App', 'Pokemon', 'Gaming'
     ],
     technology: [
       'HTML', 'CSS3 - LESS', 'React', 'Photoshop'
