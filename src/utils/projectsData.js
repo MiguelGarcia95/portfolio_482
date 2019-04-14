@@ -59,7 +59,7 @@ export const projects = [
       '/images/projects/coffee-02.png',
       '/images/projects/coffee-03.png'
     ],
-    details: "",
+    details: "A coffee design I made and then build for fun. As a huge coffee lover, I thought doing so would be adequate.",
     tags: [
       'Web Development', 'Coffee'
     ],
