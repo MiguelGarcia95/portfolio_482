@@ -34,7 +34,12 @@
       height: 260px;
       position: absolute;
       transition: background 0.3s;
-      &:hover {background: rgba(0,0,0,0.5);}
+      &:hover {
+        background: rgba(0,0,0,0.5);
+        .work_item_name {
+          display: block;
+        }
+      }
       a {
         padding: 5px 10px;
         width: 100px;
@@ -61,6 +66,7 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        display: none;
       }
     }
   }
