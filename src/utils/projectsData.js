@@ -13,10 +13,10 @@ export const projects = [
     ],
     details: "Browse thru your favorite shows and movies, as well as favorite and update your watchlist with the proper TMDB Authentication. This project is a movie search App made using react, redux, and the TMDB API. The purpose of this project was to get used to deploying multiple API calls at a time.",
     tags: [
-      'Web Development', 'React', 'Redux', 'Movies'
+      'Web Development', 'React', 'Redux', 'Video Games', 'Web App'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'TMDB API', 'Photoshop'
+      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Giant Bomb API', 'Gaming'
     ]
   },
   {
