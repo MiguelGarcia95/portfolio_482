@@ -1,5 +1,25 @@
 export const projects = [
   {
+    name: 'Game View',
+    url: 'https://game-view.firebaseapp.com',
+    previewImage: '/images/previews/game_view.png',
+    images: [
+      '/images/projects/game_view_01.png',
+      '/images/projects/game_view_02.png',
+      '/images/projects/game_view_03.png',
+      '/images/projects/game_view_04.png',
+      '/images/projects/game_view_05.png',
+      '/images/projects/game_view_06.png'
+    ],
+    details: "Browse thru your favorite shows and movies, as well as favorite and update your watchlist with the proper TMDB Authentication. This project is a movie search App made using react, redux, and the TMDB API. The purpose of this project was to get used to deploying multiple API calls at a time.",
+    tags: [
+      'Web Development', 'React', 'Redux', 'Movies'
+    ],
+    technology: [
+      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'TMDB API', 'Photoshop'
+    ]
+  },
+  {
     name: 'Movie Searchbase',
     url: 'https://movie-searchbase.firebaseapp.com/',
     previewImage: '/images/previews/movie.png',
