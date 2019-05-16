@@ -13,10 +13,10 @@ export const projects = [
     ],
     details: "A game database website. It includes games, game reviews, game franchises and game characters. It contains over 15,000 games. All powered by the giant bomb API.",
     tags: [
-      'Web Development', 'React', 'Redux', 'Video Games', 'Web App'
+      'Web Development', 'React', 'Redux', 'Video Games', 'Web App', 'Gaming'
     ],
     technology: [
-      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Giant Bomb API', 'Gaming'
+      'HTML', 'CSS3 - LESS', 'React', 'Redux', 'Giant Bomb API', 'Photoshop'
     ]
   },
   {
